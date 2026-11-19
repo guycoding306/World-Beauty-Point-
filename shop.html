@@ -1,0 +1,401 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Beauty Point | Korean Skincare Nepal</title>
+    <meta name="description" content="Discover Korean skincare products at World Beauty Point, Kathmandu, Nepal.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Announcement Bar -->
+    <div class="bg-[#252424] text-white text-center py-2.5 px-4 text-[10px] sm:text-xs tracking-widest">
+        AUTHENTIC KOREAN SKINCARE <span class="mx-3 text-white/40">✦</span> NEW ARRIVALS & OFFERS <span class="hidden sm:inline mx-3 text-white/40">✦</span><span class="hidden sm:inline">DELIVERY ACROSS NEPAL</span>
+    </div>
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-stone-100">
+        <div class="container-custom h-[76px] flex items-center justify-between gap-4">
+            <button id="menuToggle" class="lg:hidden p-2" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu"><i data-lucide="menu"></i></button>
+            <a href="#home" class="flex items-center gap-3 shrink-0">
+                <div class="w-11 h-11 rounded-full border-2 border-[#ec2795] bg-[#fff0f7] grid place-items-center text-[#ec2795] font-bold text-xl">W</div>
+                <div class="leading-tight">
+                    <strong class="block text-sm sm:text-base">WORLD BEAUTY</strong>
+                    <span class="text-[10px] tracking-[.3em] text-[#ec2795]">POINT</span>
+                </div>
+            </a>
+            <nav class="hidden lg:flex items-center gap-5 xl:gap-7">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="shop.html" class="nav-link">Shop All</a>
+                <a href="shop.html" class="nav-link">Skincare</a>
+                <a href="brands.html" class="nav-link">Brands</a>
+                <a href="shop.html" class="nav-link">New Arrivals</a>
+                <a href="shop.html" class="nav-link">Best Sellers</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <div class="flex items-center gap-1">
+                <a href="shop.html" class="p-2 hover:text-[#ec2795]" aria-label="Search products"><i data-lucide="search" class="w-5"></i></a>
+                <a href="login.html" class="hidden sm:block p-2 hover:text-[#ec2795]" aria-label="Account"><i data-lucide="user-round" class="w-5"></i></a>
+                <a href="shop.html" class="p-2 hover:text-[#ec2795]" aria-label="Wishlist"><i data-lucide="heart" class="w-5"></i></a>
+                <a href="shop.html" class="p-2 hover:text-[#ec2795]" aria-label="Shopping bag"><i data-lucide="shopping-bag" class="w-5"></i></a>
+            </div>
+        </div>
+        <nav id="mobileMenu" class="hidden lg:hidden bg-white border-t border-stone-100 px-6 py-5">
+            <div class="flex flex-col gap-4 text-sm font-medium">
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop All</a>
+                <a href="shop.html">Skincare</a>
+                <a href="brands.html">Brands</a>
+                <a href="shop.html">New Arrivals</a>
+                <a href="shop.html">Best Sellers</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Shop Page -->
+        <section id="shop-page" class="bg-white">
+            <!-- Breadcrumb -->
+            <div class="border-b border-stone-100">
+                <div class="container-custom py-4 text-xs text-stone-500">
+                    <a href="index.html" class="hover:text-[#ec2795]">Home</a>
+                    <span class="mx-2">/</span>
+                    <span class="text-stone-900">Shop All</span>
+                </div>
+            </div>
+
+            <!-- Page Heading -->
+            <div class="bg-[#faf8f7] py-14 md:py-20 text-center">
+                <p class="section-label mb-4">The World Beauty Edit</p>
+                <h1 class="text-[clamp(38px,5vw,64px)] leading-tight mb-4">Discover Your Perfect Glow</h1>
+                <p class="text-sm md:text-base text-stone-500 max-w-xl mx-auto px-5 leading-7">
+                    Explore our curated collection of Korean skincare essentials, thoughtfully selected for every beauty routine.
+                </p>
+            </div>
+
+            <div class="container-custom py-10 md:py-14">
+                <div class="flex flex-col lg:flex-row gap-8 xl:gap-12">
+                    <!-- Desktop Sidebar -->
+                    <aside class="hidden lg:block w-[245px] xl:w-[270px] shrink-0">
+                        <div class="sticky top-28">
+                            <div class="flex items-center justify-between pb-5 border-b border-stone-200">
+                                <h2 class="font-sans text-lg font-semibold">Filters</h2>
+                                <button type="button" class="clear-filters text-xs text-stone-500 underline hover:text-[#ec2795]">Clear All</button>
+                            </div>
+                            <div class="py-6">
+                                <h3 class="font-sans text-xs font-bold uppercase tracking-widest mb-5">Price Range</h3>
+                                <input type="range" class="price-range w-full accent-[#ec2795]" min="500" max="6000" step="100" value="6000" aria-label="Maximum product price">
+                                <div class="flex justify-between text-xs text-stone-500 mt-3">
+                                    <span>Rs. 500</span>
+                                    <span class="price-value font-semibold text-stone-900">Rs. 6,000</span>
+                                </div>
+                            </div>
+
+                            <div class="filter-group py-6 border-b border-stone-200">
+                                <h3 class="font-sans text-xs font-bold uppercase tracking-widest mb-5">Categories</h3>
+                                <div class="space-y-3 text-sm text-stone-600">
+                                    <label class="filter-option"><input type="checkbox" value="cleansers" data-filter="category"> Cleansers</label>
+                                    <label class="filter-option"><input type="checkbox" value="toners" data-filter="category"> Toners</label>
+                                    <label class="filter-option"><input type="checkbox" value="serums" data-filter="category"> Serums & Essences</label>
+                                    <label class="filter-option"><input type="checkbox" value="moisturisers" data-filter="category"> Moisturisers</label>
+                                    <label class="filter-option"><input type="checkbox" value="sunscreens" data-filter="category"> Sunscreens</label>
+                                    <label class="filter-option"><input type="checkbox" value="masks" data-filter="category"> Face Masks</label>
+                                </div>
+                            </div>
+
+                            <div class="filter-group py-6 border-b border-stone-200">
+                                <h3 class="font-sans text-xs font-bold uppercase tracking-widest mb-5">Brands</h3>
+                                <div class="space-y-3 text-sm text-stone-600">
+                                    <label class="filter-option"><input type="checkbox" value="cosrx" data-filter="brand"> COSRX</label>
+                                    <label class="filter-option"><input type="checkbox" value="beauty-of-joseon" data-filter="brand"> Beauty of Joseon</label>
+                                    <label class="filter-option"><input type="checkbox" value="anua" data-filter="brand"> Anua</label>
+                                    <label class="filter-option"><input type="checkbox" value="skin1004" data-filter="brand"> SKIN1004</label>
+                                    <label class="filter-option"><input type="checkbox" value="torriden" data-filter="brand"> Torriden</label>
+                                    <label class="filter-option"><input type="checkbox" value="laneige" data-filter="brand"> Laneige</label>
+                                </div>
+                            </div>
+
+                            <div class="filter-group py-6 border-b border-stone-200">
+                                <h3 class="font-sans text-xs font-bold uppercase tracking-widest mb-5">Skin Type</h3>
+                                <div class="space-y-3 text-sm text-stone-600">
+                                    <label class="filter-option"><input type="checkbox" value="dry" data-filter="skin"> Dry Skin</label>
+                                    <label class="filter-option"><input type="checkbox" value="oily" data-filter="skin"> Oily Skin</label>
+                                    <label class="filter-option"><input type="checkbox" value="combination" data-filter="skin"> Combination Skin</label>
+                                    <label class="filter-option"><input type="checkbox" value="sensitive" data-filter="skin"> Sensitive Skin</label>
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                    </aside>
+
+                    <!-- Product Content -->
+                    <div class="flex-1 min-w-0">
+                        <!-- Toolbar -->
+                        <div class="flex flex-wrap items-center justify-between gap-4 pb-6 border-b border-stone-200 mb-7">
+                            <div class="flex items-center gap-4">
+                                <button id="openFilters" class="lg:hidden flex items-center gap-2 border border-stone-200 px-4 py-3 text-xs font-semibold uppercase tracking-wider">
+                                    <i data-lucide="sliders-horizontal" class="w-4"></i> Filters
+                                </button>
+                                <p class="text-xs sm:text-sm text-stone-500">Showing <span id="productCount" class="font-semibold text-stone-900">8</span> products</p>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <label for="sortProducts" class="hidden sm:block text-xs text-stone-500">Sort by:</label>
+                                <select id="sortProducts" class="border border-stone-200 bg-white px-3 py-3 text-xs sm:text-sm outline-none focus:border-[#ec2795]">
+                                    <option value="featured">Featured</option>
+                                    <option value="low">Price: Low to High</option>
+                                    <option value="high">Price: High to Low</option>
+                                    <option value="name">Name: A to Z</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Active Filters -->
+                        <div id="activeFilters" class="hidden flex-wrap items-center gap-2 mb-6"></div>
+
+                        <!-- Product Grid -->
+                        <div id="shopGrid" class="grid grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-9 md:gap-x-6 md:gap-y-11">
+                            <!-- Product 1 -->
+                            <article class="shop-product group" data-category="serums" data-brand="cosrx" data-skin="dry sensitive" data-price="2650" data-name="Advanced Snail Essence">
+                                <div class="shop-product-image">
+                                    <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=700&q=85" alt="Illustrative skincare photo for Advanced Snail Essence" loading="lazy">
+                                    <span class="product-badge bg-[#252424] text-white">-17%</span>
+                                    <button class="wishlist-icon" aria-label="Add Advanced Snail Essence to wishlist"><i data-lucide="heart" class="w-4"></i></button>
+                                    <a href="single.html" class="quick-action">View Product</a>
+                                </div>
+                                <div class="pt-4">
+                                    <p class="product-brand">COSRX</p>
+                                    <h3 class="product-name">Advanced Snail Essence</h3>
+                                    <div class="flex flex-wrap items-center gap-2 mt-2"><strong class="text-sm">Rs. 2,650</strong><del class="text-xs text-stone-400">Rs. 3,200</del></div>
+                                </div>
+                            </article>
+
+                            <!-- Product 2 -->
+                            <article class="shop-product group" data-category="serums" data-brand="beauty-of-joseon" data-skin="dry combination" data-price="2450" data-name="Glow Deep Serum">
+                                <div class="shop-product-image">
+                                    <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=700&q=85" alt="Illustrative skincare photo for Glow Deep Serum" loading="lazy">
+                                    <span class="product-badge bg-[#252424] text-white">-16%</span>
+                                    <button class="wishlist-icon" aria-label="Add Glow Deep Serum to wishlist"><i data-lucide="heart" class="w-4"></i></button>
+                                    <a href="single.html" class="quick-action">View Product</a>
+                                </div>
+                                <div class="pt-4">
+                                    <p class="product-brand">Beauty of Joseon</p>
+                                    <h3 class="product-name">Glow Deep Serum</h3>
+                                    <div class="flex flex-wrap items-center gap-2 mt-2"><strong class="text-sm">Rs. 2,450</strong><del class="text-xs text-stone-400">Rs. 2,900</del></div>
+                                </div>
+                            </article>
+
+                            <!-- Product 3 -->
+                            <article class="shop-product group" data-category="toners" data-brand="anua" data-skin="sensitive oily" data-price="2800" data-name="Heartleaf Soothing Toner">
+                                <div class="shop-product-image">
+                                    <img src="https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&w=700&q=85" alt="Illustrative skincare photo for Heartleaf Soothing Toner" loading="lazy">
+                                    <span class="product-badge bg-white text-[#ec2795]">NEW</span>
+                                    <button class="wishlist-icon" aria-label="Add Heartleaf Soothing Toner to wishlist"><i data-lucide="heart" class="w-4"></i></button>
+                                    <a href="single.html" class="quick-action">View Product</a>
+                                </div>
+                                <div class="pt-4">
+                                    <p class="product-brand">Anua</p>
+                                    <h3 class="product-name">Heartleaf Soothing Toner</h3>
+                                    <div class="flex flex-wrap items-center gap-2 mt-2"><strong class="text-sm">Rs. 2,800</strong></div>
+                                </div>
+                            </article>
+
+                            <!-- Product 4 -->
+                            <article class="shop-product group" data-category="serums" data-brand="skin1004" data-skin="sensitive combination" data-price="2900" data-name="Centella Calming Ampoule">
+                                <div class="shop-product-image">
+                                    <img src="https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=700&q=85" alt="Illustrative skincare photo for Centella Calming Ampoule" loading="lazy">
+                                    <span class="product-badge bg-white text-[#ec2795]">NEW</span>
+                                    <button class="wishlist-icon" aria-label="Add Centella Calming Ampoule to wishlist"><i data-lucide="heart" class="w-4"></i></button>
+                                    <a href="single.html" class="quick-action">View Product</a>
+                                </div>
+                                <div class="pt-4">
+                                    <p class="product-brand">SKIN1004</p>
+                                    <h3 class="product-name">Centella Calming Ampoule</h3>
+                                    <div class="flex flex-wrap items-center gap-2 mt-2"><strong class="text-sm">Rs. 2,900</strong></div>
+                                </div>
+                            </article>
+
+                            <!-- Product 5 -->
+                            <article class="shop-product group" data-category="moisturisers" data-brand="torriden" data-skin="dry sensitive" data-price="3100" data-name="Barrier Repair Cream">
+                                <div class="shop-product-image">
+                                    <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=700&q=85" alt="Illustrative skincare photo for Barrier Repair Cream" loading="lazy">
+                                    <span class="product-badge bg-[#252424] text-white">-11%</span>
+                                    <button class="wishlist-icon" aria-label="Add Barrier Repair Cream to wishlist"><i data-lucide="heart" class="w-4"></i></button>
+                                    <a href="single.html" class="quick-action">View Product</a>
+                                </div>
+                                <div class="pt-4">
+                                    <p class="product-brand">Torriden</p>
+                                    <h3 class="product-name">Barrier Repair Cream</h3>
+                                    <div class="flex flex-wrap items-center gap-2 mt-2"><strong class="text-sm">Rs. 3,100</strong><del class="text-xs text-stone-400">Rs. 3,500</del></div>
+                                </div>
+                            </article>
+
+                            <!-- Product 6 -->
+                            <article class="shop-product group" data-category="masks" data-brand="laneige" data-skin="dry sensitive" data-price="1650" data-name="Hydrating Sheet Mask Set">
+                                <div class="shop-product-image">
+                                    <img src="https://images.unsplash.com/photo-1600612253971-422e7f7faeb6?auto=format&fit=crop&w=700&q=85" alt="Illustrative skincare photo for Hydrating Sheet Mask Set" loading="lazy">
+                                    <span class="product-badge bg-white text-[#ec2795]">NEW</span>
+                                    <button class="wishlist-icon" aria-label="Add Hydrating Sheet Mask Set to wishlist"><i data-lucide="heart" class="w-4"></i></button>
+                                    <a href="single.html" class="quick-action">View Product</a>
+                                </div>
+                                <div class="pt-4">
+                                    <p class="product-brand">Laneige</p>
+                                    <h3 class="product-name">Hydrating Sheet Mask Set</h3>
+                                    <div class="flex flex-wrap items-center gap-2 mt-2"><strong class="text-sm">Rs. 1,650</strong></div>
+                                </div>
+                            </article>
+
+                            <!-- Product 7 -->
+                            <article class="shop-product group" data-category="sunscreens" data-brand="beauty-of-joseon" data-skin="dry oily combination sensitive" data-price="2350" data-name="Daily Sun Protection">
+                                <div class="shop-product-image">
+                                    <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=700&q=85" alt="Illustrative skincare photo for Daily Sun Protection" loading="lazy">
+                                    <button class="wishlist-icon" aria-label="Add Daily Sun Protection to wishlist"><i data-lucide="heart" class="w-4"></i></button>
+                                    <a href="single.html" class="quick-action">View Product</a>
+                                </div>
+                                <div class="pt-4">
+                                    <p class="product-brand">Beauty of Joseon</p>
+                                    <h3 class="product-name">Daily Sun Protection</h3>
+                                    <div class="flex flex-wrap items-center gap-2 mt-2"><strong class="text-sm">Rs. 2,350</strong></div>
+                                </div>
+                            </article>
+
+                            <!-- Product 8 -->
+                            <article class="shop-product group" data-category="cleansers" data-brand="anua" data-skin="oily combination" data-price="1850" data-name="Gentle Cleansing Foam">
+                                <div class="shop-product-image">
+                                    <img src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?auto=format&fit=crop&w=700&q=85" alt="Illustrative skincare photo for Gentle Cleansing Foam" loading="lazy">
+                                    <span class="product-badge bg-[#252424] text-white">-12%</span>
+                                    <button class="wishlist-icon" aria-label="Add Gentle Cleansing Foam to wishlist"><i data-lucide="heart" class="w-4"></i></button>
+                                    <a href="single.html" class="quick-action">View Product</a>
+                                </div>
+                                <div class="pt-4">
+                                    <p class="product-brand">Anua</p>
+                                    <h3 class="product-name">Gentle Cleansing Foam</h3>
+                                    <div class="flex flex-wrap items-center gap-2 mt-2"><strong class="text-sm">Rs. 1,850</strong><del class="text-xs text-stone-400">Rs. 2,100</del></div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div id="noProducts" class="hidden py-24 text-center">
+                            <i data-lucide="search-x" class="w-10 h-10 mx-auto text-stone-300 mb-5"></i>
+                            <h3 class="text-2xl mb-3">No products found</h3>
+                            <p class="text-sm text-stone-500 mb-6">Try changing your filters to see more products.</p>
+                            <button class="clear-filters btn btn-outline">Clear Filters</button>
+                        </div>
+
+                        <div class="mt-12 border-t border-stone-100 pt-7 text-center">
+                            <p class="text-xs text-stone-400">Showing all products in the sample collection</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Mobile Filter Drawer -->
+        <div id="filterOverlay" class="hidden fixed inset-0 bg-black/40 z-[60]"></div>
+        <aside id="filterDrawer" class="fixed top-0 right-0 h-full w-[min(360px,90vw)] bg-white z-[70] translate-x-full transition-transform duration-300 flex flex-col" role="dialog" aria-modal="true" aria-label="Product filters" inert>
+            <div class="flex items-center justify-between p-5 border-b border-stone-200">
+                <h2 class="font-sans text-lg font-semibold">Filter Products</h2>
+                <button id="closeFilters" aria-label="Close filters"><i data-lucide="x"></i></button>
+            </div>
+            <div class="flex-1 overflow-y-auto px-5">
+                <div class="py-6">
+                    <h3 class="font-sans text-xs font-bold uppercase tracking-widest mb-5">Price Range</h3>
+                    <input type="range" class="price-range w-full accent-[#ec2795]" min="500" max="6000" step="100" value="6000" aria-label="Maximum product price">
+                    <div class="flex justify-between text-xs text-stone-500 mt-3"><span>Rs. 500</span><span class="price-value">Rs. 6,000</span></div>
+                </div>
+                <div class="py-6 border-b border-stone-200">
+                    <h3 class="font-sans text-xs font-bold uppercase tracking-widest mb-5">Categories</h3>
+                    <div class="space-y-3">
+                        <label class="filter-option"><input type="checkbox" value="cleansers" data-filter="category"> Cleansers</label>
+                        <label class="filter-option"><input type="checkbox" value="toners" data-filter="category"> Toners</label>
+                        <label class="filter-option"><input type="checkbox" value="serums" data-filter="category"> Serums & Essences</label>
+                        <label class="filter-option"><input type="checkbox" value="moisturisers" data-filter="category"> Moisturisers</label>
+                        <label class="filter-option"><input type="checkbox" value="sunscreens" data-filter="category"> Sunscreens</label>
+                        <label class="filter-option"><input type="checkbox" value="masks" data-filter="category"> Face Masks</label>
+                    </div>
+                </div>
+                <div class="py-6 border-b border-stone-200">
+                    <h3 class="font-sans text-xs font-bold uppercase tracking-widest mb-5">Brands</h3>
+                    <div class="space-y-3">
+                        <label class="filter-option"><input type="checkbox" value="cosrx" data-filter="brand"> COSRX</label>
+                        <label class="filter-option"><input type="checkbox" value="beauty-of-joseon" data-filter="brand"> Beauty of Joseon</label>
+                        <label class="filter-option"><input type="checkbox" value="anua" data-filter="brand"> Anua</label>
+                        <label class="filter-option"><input type="checkbox" value="skin1004" data-filter="brand"> SKIN1004</label>
+                        <label class="filter-option"><input type="checkbox" value="torriden" data-filter="brand"> Torriden</label>
+                        <label class="filter-option"><input type="checkbox" value="laneige" data-filter="brand"> Laneige</label>
+                    </div>
+                </div>
+                <div class="py-6 border-b border-stone-200">
+                    <h3 class="font-sans text-xs font-bold uppercase tracking-widest mb-5">Skin Type</h3>
+                    <div class="space-y-3">
+                        <label class="filter-option"><input type="checkbox" value="dry" data-filter="skin"> Dry Skin</label>
+                        <label class="filter-option"><input type="checkbox" value="oily" data-filter="skin"> Oily Skin</label>
+                        <label class="filter-option"><input type="checkbox" value="combination" data-filter="skin"> Combination Skin</label>
+                        <label class="filter-option"><input type="checkbox" value="sensitive" data-filter="skin"> Sensitive Skin</label>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="p-5 border-t border-stone-200 flex gap-3">
+                <button class="clear-filters btn btn-outline flex-1">Clear</button>
+                <button id="applyFilters" class="btn btn-dark flex-1">View Products</button>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-[#252424] text-white">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 py-16">
+                <div>
+                    <div class="flex items-center gap-3 mb-5">
+                        <span class="w-11 h-11 rounded-full bg-[#ec2795] grid place-items-center text-xl font-bold">W</span>
+                        <div class="leading-tight"><strong class="text-sm">WORLD BEAUTY</strong><p class="text-[10px] tracking-[.3em] text-pink-300">POINT</p></div>
+                    </div>
+                    <p class="text-sm text-white/60 leading-7">Explore Korean skincare with World Beauty Point, based in Kathmandu, Nepal.</p>
+                    <a href="https://www.instagram.com/world_beauty_point/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="inline-block mt-5"><i data-lucide="instagram" class="w-5"></i></a>
+                </div>
+                <div>
+                    <h3 class="font-sans font-bold text-sm uppercase tracking-widest mb-5">Quick Links</h3>
+                    <div class="flex flex-col gap-3 text-sm text-white/60">
+                        <a href="#home" class="hover:text-white">Home</a>
+                        <a href="#categories" class="hover:text-white">Shop All</a>
+                        <a href="#about" class="hover:text-white">About Us</a>
+                        <a href="#contact" class="hover:text-white">Contact</a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-sans font-bold text-sm uppercase tracking-widest mb-5">Customer Care</h3>
+                    <div class="flex flex-col gap-3 text-sm text-white/60">
+                        <a href="mailto:worldbeautypoint@gmail.com?subject=Shopping%20Information" class="hover:text-white">Shopping Information</a>
+                        <a href="mailto:worldbeautypoint@gmail.com?subject=Returns%20and%20Refunds" class="hover:text-white">Returns & Refunds</a>
+                        <a href="mailto:worldbeautypoint@gmail.com?subject=Privacy%20Enquiry" class="hover:text-white">Privacy Enquiry</a>
+                        <a href="mailto:worldbeautypoint@gmail.com?subject=Terms%20and%20Conditions" class="hover:text-white">Terms & Conditions</a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-sans font-bold text-sm uppercase tracking-widest mb-5">Visit & Connect</h3>
+                    <div class="flex flex-col gap-3 text-sm text-white/60">
+                        <p>Kathmandu, Nepal</p>
+                        <a href="tel:+9779851403216" class="hover:text-white">+977 9851403216</a>
+                        <a href="mailto:worldbeautypoint@gmail.com" class="hover:text-white break-all">worldbeautypoint@gmail.com</a>
+                        <a href="https://worldbeautypoint.com/" target="_blank" rel="noopener noreferrer" class="hover:text-white">worldbeautypoint.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-white/15 py-6 flex flex-col sm:flex-row justify-between gap-3 text-xs text-white/50">
+                <p>© 2026 World Beauty Point. All rights reserved.</p>
+                <p>Frontend concept • Product prices and images are illustrative</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

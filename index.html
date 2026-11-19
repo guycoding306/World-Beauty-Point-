@@ -1,0 +1,462 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Beauty Point | Korean Skincare Nepal</title>
+    <meta name="description" content="Discover Korean skincare products at World Beauty Point, Kathmandu, Nepal.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Announcement Bar -->
+    <div class="bg-[#252424] text-white text-center py-2.5 px-4 text-[10px] sm:text-xs tracking-widest">
+        AUTHENTIC KOREAN SKINCARE <span class="mx-3 text-white/40">✦</span> NEW ARRIVALS & OFFERS <span class="hidden sm:inline mx-3 text-white/40">✦</span><span class="hidden sm:inline">DELIVERY ACROSS NEPAL</span>
+    </div>
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-stone-100">
+        <div class="container-custom h-[76px] flex items-center justify-between gap-4">
+            <button id="menuToggle" class="lg:hidden p-2" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu"><i data-lucide="menu"></i></button>
+            <a href="#home" class="flex items-center gap-3 shrink-0">
+                <div class="w-11 h-11 rounded-full border-2 border-[#ec2795] bg-[#fff0f7] grid place-items-center text-[#ec2795] font-bold text-xl">W</div>
+                <div class="leading-tight">
+                    <strong class="block text-sm sm:text-base">WORLD BEAUTY</strong>
+                    <span class="text-[10px] tracking-[.3em] text-[#ec2795]">POINT</span>
+                </div>
+            </a>
+            <nav class="hidden lg:flex items-center gap-5 xl:gap-7">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="shop.html" class="nav-link">Shop All</a>
+                <a href="shop.html" class="nav-link">Skincare</a>
+                <a href="brands.html" class="nav-link">Brands</a>
+                <a href="shop.html" class="nav-link">New Arrivals</a>
+                <a href="shop.html" class="nav-link">Best Sellers</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <div class="flex items-center gap-1">
+                <a href="shop.html" class="p-2 hover:text-[#ec2795]" aria-label="Search products"><i data-lucide="search" class="w-5"></i></a>
+                <a href="login.html" class="hidden sm:block p-2 hover:text-[#ec2795]" aria-label="Account"><i data-lucide="user-round" class="w-5"></i></a>
+                <a href="shop.html" class="p-2 hover:text-[#ec2795]" aria-label="Wishlist"><i data-lucide="heart" class="w-5"></i></a>
+                <a href="shop.html" class="p-2 hover:text-[#ec2795]" aria-label="Shopping bag"><i data-lucide="shopping-bag" class="w-5"></i></a>
+            </div>
+        </div>
+        <nav id="mobileMenu" class="hidden lg:hidden bg-white border-t border-stone-100 px-6 py-5">
+            <div class="flex flex-col gap-4 text-sm font-medium">
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop All</a>
+                <a href="shop.html">Skincare</a>
+                <a href="brands.html">Brands</a>
+                <a href="shop.html">New Arrivals</a>
+                <a href="shop.html">Best Sellers</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Slider -->
+        <section id="home" class="relative h-[570px] lg:h-[680px] overflow-hidden" aria-label="Featured skincare collections">
+            <div class="hero-slide active" aria-hidden="false">
+                <img src="https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=1800&q=85" alt="Korean skincare collection">
+                <div class="hero-overlay absolute inset-0"></div>
+                <div class="absolute inset-0 flex items-center">
+                    <div class="container-custom w-full">
+                        <div class="max-w-[600px]">
+                            <p class="section-label mb-6">The Art of Korean Skincare</p>
+                            <h1 class="text-[clamp(46px,6vw,86px)] leading-[1.08] tracking-tight mb-6">Your Skin<br>Deserves <em class="text-[#ec2795] font-normal">the Best.</em></h1>
+                            <p class="text-stone-600 leading-8 max-w-md mb-8">Discover authentic Korean skincare and bring the beauty of Korean skincare rituals into your everyday life.</p>
+                            <div class="flex flex-wrap gap-3">
+                                <a href="shop.html" class="btn btn-dark">Shop Now <i data-lucide="arrow-up-right" class="w-4"></i></a>
+                                <a href="#categories" class="btn btn-outline">Explore Collection</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide" aria-hidden="true">
+                <img src="https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&w=1800&q=85" alt="Skincare and beauty products">
+                <div class="hero-overlay absolute inset-0"></div>
+                <div class="absolute inset-0 flex items-center">
+                    <div class="container-custom w-full">
+                        <div class="max-w-[600px]">
+                            <p class="section-label mb-6">Discover Your Daily Glow</p>
+                            <h2 class="text-[clamp(46px,6vw,86px)] leading-[1.08] tracking-tight mb-6">A Better<br><em class="text-[#ec2795] font-normal">Skincare Ritual.</em></h2>
+                            <p class="text-stone-600 leading-8 max-w-md mb-8">Explore cleansers, toners, serums and moisturisers to build a routine that suits your skin.</p>
+                            <a href="#categories" class="btn btn-dark">Explore Skincare <i data-lucide="arrow-up-right" class="w-4"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide" aria-hidden="true">
+                <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=1800&q=85" alt="Beauty and skincare essentials">
+                <div class="hero-overlay absolute inset-0"></div>
+                <div class="absolute inset-0 flex items-center">
+                    <div class="container-custom w-full">
+                        <div class="max-w-[600px]">
+                            <p class="section-label mb-6">The Beauty Edit</p>
+                            <h2 class="text-[clamp(46px,6vw,86px)] leading-[1.08] tracking-tight mb-6">Find Your<br><em class="text-[#ec2795] font-normal">New Favourite.</em></h2>
+                            <p class="text-stone-600 leading-8 max-w-md mb-8">Explore skincare essentials and discover new additions to your everyday beauty routine.</p>
+                            <a href="#new-arrivals" class="btn btn-dark">New Arrivals <i data-lucide="arrow-up-right" class="w-4"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button id="heroPrev" class="absolute left-3 md:left-6 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white w-10 h-10 rounded-full grid place-items-center" aria-label="Previous slide"><i data-lucide="chevron-left" class="w-5"></i></button>
+            <button id="heroNext" class="absolute right-3 md:right-6 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white w-10 h-10 rounded-full grid place-items-center" aria-label="Next slide"><i data-lucide="chevron-right" class="w-5"></i></button>
+            <div class="absolute bottom-7 left-1/2 -translate-x-1/2 z-10 flex items-center gap-2">
+                <button class="hero-dot active" data-slide="0" aria-label="Go to slide 1" aria-current="true"></button>
+                <button class="hero-dot" data-slide="1" aria-label="Go to slide 2"></button>
+                <button class="hero-dot" data-slide="2" aria-label="Go to slide 3"></button>
+            </div>
+        </section>
+
+        <!-- Highlights -->
+        <section class="bg-[#fdf8f7] border-y border-stone-100">
+            <div class="container-custom grid grid-cols-2 lg:grid-cols-4 gap-4 py-7 text-center text-[10px] sm:text-xs uppercase tracking-widest">
+                <span>Thoughtful Skincare</span>
+                <span>Curated Korean Beauty</span>
+                <span>Beauty for Every Routine</span>
+                <span>From Kathmandu With Care</span>
+            </div>
+        </section>
+
+        <!-- Categories -->
+        <section id="categories" class="py-20 lg:py-24">
+            <div class="container-custom">
+                <div class="flex justify-between items-end mb-10">
+                    <div>
+                        <p class="section-label mb-3">Find Your Ritual</p>
+                        <h2 class="section-title">Shop by Category</h2>
+                    </div>
+                    <a href="#bestsellers" class="hidden sm:flex items-center gap-2 text-xs font-bold uppercase tracking-widest">Shop All <i data-lucide="arrow-right" class="w-4"></i></a>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-7">
+                    <a href="#bestsellers" class="group">
+                        <div class="image-zoom aspect-[.92] mb-4"><img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=600&q=80" alt="Cleansers" loading="lazy"></div>
+                        <div class="flex justify-between items-center gap-2"><h3 class="font-sans text-sm md:text-base font-medium">Cleansers</h3><i data-lucide="arrow-up-right" class="w-4"></i></div>
+                    </a>
+                    <a href="#bestsellers" class="group">
+                        <div class="image-zoom aspect-[.92] mb-4"><img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=600&q=80" alt="Toners" loading="lazy"></div>
+                        <div class="flex justify-between items-center gap-2"><h3 class="font-sans text-sm md:text-base font-medium">Toners</h3><i data-lucide="arrow-up-right" class="w-4"></i></div>
+                    </a>
+                    <a href="#bestsellers" class="group">
+                        <div class="image-zoom aspect-[.92] mb-4"><img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=600&q=80" alt="Serums and essences" loading="lazy"></div>
+                        <div class="flex justify-between items-center gap-2"><h3 class="font-sans text-sm md:text-base font-medium">Serums & Essences</h3><i data-lucide="arrow-up-right" class="w-4"></i></div>
+                    </a>
+                    <a href="#bestsellers" class="group">
+                        <div class="image-zoom aspect-[.92] mb-4"><img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=600&q=80" alt="Moisturisers" loading="lazy"></div>
+                        <div class="flex justify-between items-center gap-2"><h3 class="font-sans text-sm md:text-base font-medium">Moisturisers</h3><i data-lucide="arrow-up-right" class="w-4"></i></div>
+                    </a>
+                    <a href="#bestsellers" class="group">
+                        <div class="image-zoom aspect-[.92] mb-4"><img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=600&q=80" alt="Sunscreens" loading="lazy"></div>
+                        <div class="flex justify-between items-center gap-2"><h3 class="font-sans text-sm md:text-base font-medium">Sunscreens</h3><i data-lucide="arrow-up-right" class="w-4"></i></div>
+                    </a>
+                    <a href="#bestsellers" class="group">
+                        <div class="image-zoom aspect-[.92] mb-4"><img src="https://images.unsplash.com/photo-1600612253971-422e7f7faeb6?auto=format&fit=crop&w=600&q=80" alt="Face masks" loading="lazy"></div>
+                        <div class="flex justify-between items-center gap-2"><h3 class="font-sans text-sm md:text-base font-medium">Face Masks</h3><i data-lucide="arrow-up-right" class="w-4"></i></div>
+                    </a>
+                    <a href="#bestsellers" class="group">
+                        <div class="image-zoom aspect-[.92] mb-4"><img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=600&q=80" alt="Eye care" loading="lazy"></div>
+                        <div class="flex justify-between items-center gap-2"><h3 class="font-sans text-sm md:text-base font-medium">Eye Care</h3><i data-lucide="arrow-up-right" class="w-4"></i></div>
+                    </a>
+                    <a href="#bestsellers" class="group">
+                        <div class="image-zoom aspect-[.92] mb-4"><img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=600&q=80" alt="Skincare sets" loading="lazy"></div>
+                        <div class="flex justify-between items-center gap-2"><h3 class="font-sans text-sm md:text-base font-medium">Skincare Sets</h3><i data-lucide="arrow-up-right" class="w-4"></i></div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Most Loved Essentials - Five Product Slider -->
+        <section id="bestsellers" class="bg-[#faf8f7] py-20 lg:py-24">
+            <div class="container-custom">
+                <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-5 mb-10">
+                    <div>
+                        <p class="section-label mb-3">The Beauty Edit</p>
+                        <h2 class="section-title mb-2">Most Loved Essentials</h2>
+                        <p class="text-stone-500 text-sm">Explore favourites from our sample skincare catalogue.</p>
+                    </div>
+                    <div class="flex gap-2">
+                        <button class="product-prev w-10 h-10 border border-stone-300 grid place-items-center hover:bg-white" aria-label="Previous products"><i data-lucide="arrow-left" class="w-4"></i></button>
+                        <button class="product-next w-10 h-10 border border-stone-300 grid place-items-center hover:bg-white" aria-label="Next products"><i data-lucide="arrow-right" class="w-4"></i></button>
+                    </div>
+                </div>
+                <div id="bestSellerSlider" class="slider-track gap-[18px]">
+                    <article class="product-card group">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=600&q=80" alt="Illustrative photo for COSRX Advanced Snail Essence" loading="lazy">
+                            <span class="absolute top-3 left-3 bg-[#252424] text-white text-[10px] px-2.5 py-1.5">-17%</span>
+                            <a href="#contact" class="product-action">Enquire Now</a>
+                        </div>
+                        <div class="pt-4">
+                            <p class="text-[10px] text-stone-400 uppercase tracking-widest mb-1">COSRX</p>
+                            <h3 class="font-sans font-medium text-sm">Advanced Snail Essence</h3>
+                            <div class="flex flex-wrap gap-2 mt-2 text-sm"><strong>Rs. 2,650</strong><del class="text-stone-400 text-xs">Rs. 3,200</del></div>
+                            <a href="#contact" class="block text-center border border-stone-300 py-3 mt-4 text-[10px] font-bold uppercase tracking-widest hover:bg-[#252424] hover:text-white transition">Enquire Now</a>
+                        </div>
+                    </article>
+                    <article class="product-card group">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=600&q=80" alt="Illustrative photo for Beauty of Joseon Glow Deep Serum" loading="lazy">
+                            <span class="absolute top-3 left-3 bg-[#252424] text-white text-[10px] px-2.5 py-1.5">-16%</span>
+                            <a href="#contact" class="product-action">Enquire Now</a>
+                        </div>
+                        <div class="pt-4">
+                            <p class="text-[10px] text-stone-400 uppercase tracking-widest mb-1">Beauty of Joseon</p>
+                            <h3 class="font-sans font-medium text-sm">Glow Deep Serum</h3>
+                            <div class="flex flex-wrap gap-2 mt-2 text-sm"><strong>Rs. 2,450</strong><del class="text-stone-400 text-xs">Rs. 2,900</del></div>
+                            <a href="#contact" class="block text-center border border-stone-300 py-3 mt-4 text-[10px] font-bold uppercase tracking-widest hover:bg-[#252424] hover:text-white transition">Enquire Now</a>
+                        </div>
+                    </article>
+                    <article class="product-card group">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=600&q=80" alt="Illustrative photo for Daily Sun Protection" loading="lazy">
+                            <a href="#contact" class="product-action">Enquire Now</a>
+                        </div>
+                        <div class="pt-4">
+                            <p class="text-[10px] text-stone-400 uppercase tracking-widest mb-1">Beauty of Joseon</p>
+                            <h3 class="font-sans font-medium text-sm">Daily Sun Protection</h3>
+                            <div class="flex flex-wrap gap-2 mt-2 text-sm"><strong>Rs. 2,350</strong></div>
+                            <a href="#contact" class="block text-center border border-stone-300 py-3 mt-4 text-[10px] font-bold uppercase tracking-widest hover:bg-[#252424] hover:text-white transition">Enquire Now</a>
+                        </div>
+                    </article>
+                    <article class="product-card group">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&w=600&q=80" alt="Illustrative photo for Anua Heartleaf Soothing Toner" loading="lazy">
+                            <span class="absolute top-3 left-3 bg-white text-[#ec2795] text-[10px] px-2.5 py-1.5">NEW</span>
+                            <a href="#contact" class="product-action">Enquire Now</a>
+                        </div>
+                        <div class="pt-4">
+                            <p class="text-[10px] text-stone-400 uppercase tracking-widest mb-1">Anua</p>
+                            <h3 class="font-sans font-medium text-sm">Heartleaf Soothing Toner</h3>
+                            <div class="flex flex-wrap gap-2 mt-2 text-sm"><strong>Rs. 2,800</strong></div>
+                            <a href="#contact" class="block text-center border border-stone-300 py-3 mt-4 text-[10px] font-bold uppercase tracking-widest hover:bg-[#252424] hover:text-white transition">Enquire Now</a>
+                        </div>
+                    </article>
+                    <article class="product-card group">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=600&q=80" alt="Illustrative photo for SKIN1004 Centella Calming Ampoule" loading="lazy">
+                            <span class="absolute top-3 left-3 bg-white text-[#ec2795] text-[10px] px-2.5 py-1.5">NEW</span>
+                            <a href="#contact" class="product-action">Enquire Now</a>
+                        </div>
+                        <div class="pt-4">
+                            <p class="text-[10px] text-stone-400 uppercase tracking-widest mb-1">SKIN1004</p>
+                            <h3 class="font-sans font-medium text-sm">Centella Calming Ampoule</h3>
+                            <div class="flex flex-wrap gap-2 mt-2 text-sm"><strong>Rs. 2,900</strong></div>
+                            <a href="#contact" class="block text-center border border-stone-300 py-3 mt-4 text-[10px] font-bold uppercase tracking-widest hover:bg-[#252424] hover:text-white transition">Enquire Now</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="text-center mt-10"><a href="#new-arrivals" class="btn btn-outline">Explore More Products <i data-lucide="arrow-right" class="w-4"></i></a></div>
+            </div>
+        </section>
+
+        <!-- Promotional Banner -->
+        <section class="py-20">
+            <div class="container-custom">
+                <div class="promo-banner min-h-[390px] flex items-center">
+                    <div class="p-8 md:p-16 max-w-[600px]">
+                        <p class="section-label mb-4">Your Everyday Glow</p>
+                        <h2 class="text-[clamp(36px,4.5vw,60px)] leading-tight mb-5">Glow Starts With<br>the Right Skincare.</h2>
+                        <p class="text-stone-600 mb-7 leading-7">Discover your next skincare favourite with World Beauty Point.</p>
+                        <a href="#new-arrivals" class="btn btn-dark">Explore Products <i data-lucide="arrow-up-right" class="w-4"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Arrivals -->
+        <section id="new-arrivals" class="pb-24">
+            <div class="container-custom">
+                <div class="flex items-end justify-between mb-9">
+                    <div>
+                        <p class="section-label mb-3">Just Landed</p>
+                        <h2 class="section-title">New Arrivals</h2>
+                    </div>
+                    <div class="flex gap-2">
+                        <button class="arrival-prev w-10 h-10 border border-stone-300 grid place-items-center" aria-label="Previous arrivals"><i data-lucide="arrow-left" class="w-4"></i></button>
+                        <button class="arrival-next w-10 h-10 border border-stone-300 grid place-items-center" aria-label="Next arrivals"><i data-lucide="arrow-right" class="w-4"></i></button>
+                    </div>
+                </div>
+                <div id="arrivalSlider" class="slider-track gap-[18px]">
+                    <article class="product-card group">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&w=600&q=80" alt="Illustrative photo for Heartleaf Soothing Toner" loading="lazy">
+                            <span class="absolute top-3 left-3 bg-white text-[#ec2795] text-[10px] px-2.5 py-1.5">NEW</span>
+                        </div>
+                        <div class="pt-4"><p class="text-[10px] uppercase tracking-widest text-stone-400 mb-1">Anua</p><h3 class="font-sans font-medium text-sm">Heartleaf Soothing Toner</h3><strong class="block text-sm mt-2">Rs. 2,800</strong><a href="#contact" class="block border border-stone-300 text-center py-3 mt-4 text-[10px] font-bold uppercase tracking-widest hover:bg-[#252424] hover:text-white">Enquire Now</a></div>
+                    </article>
+                    <article class="product-card group">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=600&q=80" alt="Illustrative photo for Centella Calming Ampoule" loading="lazy">
+                            <span class="absolute top-3 left-3 bg-white text-[#ec2795] text-[10px] px-2.5 py-1.5">NEW</span>
+                        </div>
+                        <div class="pt-4"><p class="text-[10px] uppercase tracking-widest text-stone-400 mb-1">SKIN1004</p><h3 class="font-sans font-medium text-sm">Centella Calming Ampoule</h3><strong class="block text-sm mt-2">Rs. 2,900</strong><a href="#contact" class="block border border-stone-300 text-center py-3 mt-4 text-[10px] font-bold uppercase tracking-widest hover:bg-[#252424] hover:text-white">Enquire Now</a></div>
+                    </article>
+                    <article class="product-card group">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=600&q=80" alt="Illustrative photo for Barrier Repair Cream" loading="lazy">
+                            <span class="absolute top-3 left-3 bg-white text-[#ec2795] text-[10px] px-2.5 py-1.5">NEW</span>
+                        </div>
+                        <div class="pt-4"><p class="text-[10px] uppercase tracking-widest text-stone-400 mb-1">Torriden</p><h3 class="font-sans font-medium text-sm">Barrier Repair Cream</h3><strong class="block text-sm mt-2">Rs. 3,100</strong><a href="#contact" class="block border border-stone-300 text-center py-3 mt-4 text-[10px] font-bold uppercase tracking-widest hover:bg-[#252424] hover:text-white">Enquire Now</a></div>
+                    </article>
+                    <article class="product-card group">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1600612253971-422e7f7faeb6?auto=format&fit=crop&w=600&q=80" alt="Illustrative photo for Hydrating Sheet Mask Set" loading="lazy">
+                            <span class="absolute top-3 left-3 bg-white text-[#ec2795] text-[10px] px-2.5 py-1.5">NEW</span>
+                        </div>
+                        <div class="pt-4"><p class="text-[10px] uppercase tracking-widest text-stone-400 mb-1">Laneige</p><h3 class="font-sans font-medium text-sm">Hydrating Sheet Mask Set</h3><strong class="block text-sm mt-2">Rs. 1,650</strong><a href="#contact" class="block border border-stone-300 text-center py-3 mt-4 text-[10px] font-bold uppercase tracking-widest hover:bg-[#252424] hover:text-white">Enquire Now</a></div>
+                    </article>
+                    <article class="product-card group">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=600&q=80" alt="Illustrative photo for Balancing Facial Toner" loading="lazy">
+                            <span class="absolute top-3 left-3 bg-white text-[#ec2795] text-[10px] px-2.5 py-1.5">NEW</span>
+                        </div>
+                        <div class="pt-4"><p class="text-[10px] uppercase tracking-widest text-stone-400 mb-1">Round Lab</p><h3 class="font-sans font-medium text-sm">Balancing Facial Toner</h3><strong class="block text-sm mt-2">Rs. 2,250</strong><a href="#contact" class="block border border-stone-300 text-center py-3 mt-4 text-[10px] font-bold uppercase tracking-widest hover:bg-[#252424] hover:text-white">Enquire Now</a></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brands -->
+        <section id="brands" class="bg-[#fdf8f7] py-20">
+            <div class="container-custom text-center">
+                <p class="section-label mb-3">Explore the Icons</p>
+                <h2 class="section-title mb-10">Discover Korean Beauty Brands</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="bg-white border border-stone-100 h-28 flex items-center justify-center px-3 font-semibold text-lg">Beauty of Joseon</div>
+                    <div class="bg-white border border-stone-100 h-28 flex items-center justify-center px-3 font-semibold text-lg">Anua</div>
+                    <div class="bg-white border border-stone-100 h-28 flex items-center justify-center px-3 font-semibold text-lg">COSRX</div>
+                    <div class="bg-white border border-stone-100 h-28 flex items-center justify-center px-3 font-semibold text-lg">SKIN1004</div>
+                    <div class="bg-white border border-stone-100 h-28 flex items-center justify-center px-3 font-semibold text-lg">SOME BY MI</div>
+                    <div class="bg-white border border-stone-100 h-28 flex items-center justify-center px-3 font-semibold text-lg">Round Lab</div>
+                    <div class="bg-white border border-stone-100 h-28 flex items-center justify-center px-3 font-semibold text-lg">Torriden</div>
+                    <div class="bg-white border border-stone-100 h-28 flex items-center justify-center px-3 font-semibold text-lg">Laneige</div>
+                </div>
+                <p class="text-xs text-stone-500 mt-7">Brands shown for browsing inspiration. Official partnerships are not implied.</p>
+            </div>
+        </section>
+
+        <!-- Benefits -->
+        <section id="about" class="py-20 lg:py-24">
+            <div class="container-custom">
+                <div class="text-center mb-12">
+                    <p class="section-label mb-3">Our Philosophy</p>
+                    <h2 class="section-title">The World Beauty Point Difference</h2>
+                </div>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+                    <div class="text-center">
+                        <div class="w-16 h-16 rounded-full bg-[#fff0f7] grid place-items-center mx-auto mb-5"><i data-lucide="shield-check" class="w-7 text-[#ec2795]"></i></div>
+                        <h3 class="font-sans font-semibold text-lg mb-3">Authenticity Focus</h3>
+                        <p class="text-sm text-stone-500 leading-7">Explore Korean skincare with product information to help inform your choices.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 rounded-full bg-[#fff0f7] grid place-items-center mx-auto mb-5"><i data-lucide="gem" class="w-7 text-[#ec2795]"></i></div>
+                        <h3 class="font-sans font-semibold text-lg mb-3">Carefully Selected</h3>
+                        <p class="text-sm text-stone-500 leading-7">A considered range of products for different skincare needs.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 rounded-full bg-[#fff0f7] grid place-items-center mx-auto mb-5"><i data-lucide="truck" class="w-7 text-[#ec2795]"></i></div>
+                        <h3 class="font-sans font-semibold text-lg mb-3">Nationwide Delivery</h3>
+                        <p class="text-sm text-stone-500 leading-7">Contact us to confirm delivery availability and charges in Nepal.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 rounded-full bg-[#fff0f7] grid place-items-center mx-auto mb-5"><i data-lucide="messages-square" class="w-7 text-[#ec2795]"></i></div>
+                        <h3 class="font-sans font-semibold text-lg mb-3">Customer Support</h3>
+                        <p class="text-sm text-stone-500 leading-7">Friendly help with product selection and enquiries.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Instagram -->
+        <section class="bg-[#f9f1ef] py-20">
+            <div class="container-custom">
+                <div class="flex flex-col md:flex-row justify-between md:items-end gap-5 mb-9">
+                    <div>
+                        <p class="section-label mb-3">@world_beauty_point</p>
+                        <h2 class="section-title">Stay Connected With<br>Our Beauty Community</h2>
+                    </div>
+                    <a href="https://www.instagram.com/world_beauty_point/" target="_blank" rel="noopener noreferrer" class="btn btn-outline self-start">Follow on Instagram <i data-lucide="instagram" class="w-4"></i></a>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                    <a href="https://www.instagram.com/world_beauty_point/" target="_blank" rel="noopener noreferrer" class="image-zoom aspect-square"><img src="https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&w=600&q=80" alt="Skincare inspiration" loading="lazy"></a>
+                    <a href="https://www.instagram.com/world_beauty_point/" target="_blank" rel="noopener noreferrer" class="image-zoom aspect-square"><img src="https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=600&q=80" alt="Beauty products" loading="lazy"></a>
+                    <a href="https://www.instagram.com/world_beauty_point/" target="_blank" rel="noopener noreferrer" class="image-zoom aspect-square"><img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=600&q=80" alt="Skincare collection" loading="lazy"></a>
+                    <a href="https://www.instagram.com/world_beauty_point/" target="_blank" rel="noopener noreferrer" class="image-zoom aspect-square"><img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=600&q=80" alt="Skincare treatment" loading="lazy"></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="py-20">
+            <div class="container-custom text-center">
+                <p class="section-label mb-3">A Little Beauty in Your Inbox</p>
+                <h2 class="section-title mb-4">Be the First to Glow.</h2>
+                <p class="text-stone-500 text-sm leading-7 max-w-xl mx-auto mb-7">Subscribe to receive skincare tips, exclusive offers and updates about our latest arrivals.</p>
+                <form action="#" method="post" onsubmit="return false;" class="flex max-w-lg mx-auto border border-stone-300">
+                    <input type="email" name="email" required placeholder="Your email address" aria-label="Email address" class="flex-1 min-w-0 px-4 py-4 text-sm outline-none">
+                    <button type="submit" class="btn btn-dark">Subscribe</button>
+                </form>
+                <p class="text-xs text-stone-400 mt-3">Subscription service will be connected with the backend.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-[#252424] text-white">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 py-16">
+                <div>
+                    <div class="flex items-center gap-3 mb-5">
+                        <span class="w-11 h-11 rounded-full bg-[#ec2795] grid place-items-center text-xl font-bold">W</span>
+                        <div class="leading-tight"><strong class="text-sm">WORLD BEAUTY</strong><p class="text-[10px] tracking-[.3em] text-pink-300">POINT</p></div>
+                    </div>
+                    <p class="text-sm text-white/60 leading-7">Explore Korean skincare with World Beauty Point, based in Kathmandu, Nepal.</p>
+                    <a href="https://www.instagram.com/world_beauty_point/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="inline-block mt-5"><i data-lucide="instagram" class="w-5"></i></a>
+                </div>
+                <div>
+                    <h3 class="font-sans font-bold text-sm uppercase tracking-widest mb-5">Quick Links</h3>
+                    <div class="flex flex-col gap-3 text-sm text-white/60">
+                        <a href="#home" class="hover:text-white">Home</a>
+                        <a href="#categories" class="hover:text-white">Shop All</a>
+                        <a href="#about" class="hover:text-white">About Us</a>
+                        <a href="#contact" class="hover:text-white">Contact</a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-sans font-bold text-sm uppercase tracking-widest mb-5">Customer Care</h3>
+                    <div class="flex flex-col gap-3 text-sm text-white/60">
+                        <a href="mailto:worldbeautypoint@gmail.com?subject=Shopping%20Information" class="hover:text-white">Shopping Information</a>
+                        <a href="mailto:worldbeautypoint@gmail.com?subject=Returns%20and%20Refunds" class="hover:text-white">Returns & Refunds</a>
+                        <a href="mailto:worldbeautypoint@gmail.com?subject=Privacy%20Enquiry" class="hover:text-white">Privacy Enquiry</a>
+                        <a href="mailto:worldbeautypoint@gmail.com?subject=Terms%20and%20Conditions" class="hover:text-white">Terms & Conditions</a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-sans font-bold text-sm uppercase tracking-widest mb-5">Visit & Connect</h3>
+                    <div class="flex flex-col gap-3 text-sm text-white/60">
+                        <p>Kathmandu, Nepal</p>
+                        <a href="tel:+9779851403216" class="hover:text-white">+977 9851403216</a>
+                        <a href="mailto:worldbeautypoint@gmail.com" class="hover:text-white break-all">worldbeautypoint@gmail.com</a>
+                        <a href="https://worldbeautypoint.com/" target="_blank" rel="noopener noreferrer" class="hover:text-white">worldbeautypoint.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-white/15 py-6 flex flex-col sm:flex-row justify-between gap-3 text-xs text-white/50">
+                <p>© 2026 World Beauty Point. All rights reserved.</p>
+                <p>Frontend concept • Product prices and images are illustrative</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    
+</body>
+</html>

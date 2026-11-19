@@ -1,0 +1,332 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Beauty Point | Korean Skincare Nepal</title>
+    <meta name="description" content="Discover Korean skincare products at World Beauty Point, Kathmandu, Nepal.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Announcement Bar -->
+    <div class="bg-[#252424] text-white text-center py-2.5 px-4 text-[10px] sm:text-xs tracking-widest">
+        AUTHENTIC KOREAN SKINCARE <span class="mx-3 text-white/40">✦</span> NEW ARRIVALS & OFFERS <span class="hidden sm:inline mx-3 text-white/40">✦</span><span class="hidden sm:inline">DELIVERY ACROSS NEPAL</span>
+    </div>
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-stone-100">
+        <div class="container-custom h-[76px] flex items-center justify-between gap-4">
+            <button id="menuToggle" class="lg:hidden p-2" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu"><i data-lucide="menu"></i></button>
+            <a href="#home" class="flex items-center gap-3 shrink-0">
+                <div class="w-11 h-11 rounded-full border-2 border-[#ec2795] bg-[#fff0f7] grid place-items-center text-[#ec2795] font-bold text-xl">W</div>
+                <div class="leading-tight">
+                    <strong class="block text-sm sm:text-base">WORLD BEAUTY</strong>
+                    <span class="text-[10px] tracking-[.3em] text-[#ec2795]">POINT</span>
+                </div>
+            </a>
+            <nav class="hidden lg:flex items-center gap-5 xl:gap-7">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="shop.html" class="nav-link">Shop All</a>
+                <a href="shop.html" class="nav-link">Skincare</a>
+                <a href="brands.html" class="nav-link">Brands</a>
+                <a href="shop.html" class="nav-link">New Arrivals</a>
+                <a href="shop.html" class="nav-link">Best Sellers</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <div class="flex items-center gap-1">
+                <a href="shop.html" class="p-2 hover:text-[#ec2795]" aria-label="Search products"><i data-lucide="search" class="w-5"></i></a>
+                <a href="login.html" class="hidden sm:block p-2 hover:text-[#ec2795]" aria-label="Account"><i data-lucide="user-round" class="w-5"></i></a>
+                <a href="shop.html" class="p-2 hover:text-[#ec2795]" aria-label="Wishlist"><i data-lucide="heart" class="w-5"></i></a>
+                <a href="shop.html" class="p-2 hover:text-[#ec2795]" aria-label="Shopping bag"><i data-lucide="shopping-bag" class="w-5"></i></a>
+            </div>
+        </div>
+        <nav id="mobileMenu" class="hidden lg:hidden bg-white border-t border-stone-100 px-6 py-5">
+            <div class="flex flex-col gap-4 text-sm font-medium">
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop All</a>
+                <a href="shop.html">Skincare</a>
+                <a href="brands.html">Brands</a>
+                <a href="shop.html">New Arrivals</a>
+                <a href="shop.html">Best Sellers</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Single Product Page -->
+        <section id="product-detail" class="bg-white">
+            <!-- Breadcrumb -->
+            <div class="border-b border-stone-100">
+                <div class="container-custom py-4 text-xs text-stone-500 flex flex-wrap items-center gap-2">
+                    <a href="index.html" class="hover:text-[#ec2795]">Home</a>
+                    <i data-lucide="chevron-right" class="w-3 h-3"></i>
+                    <a href="shop.html" class="hover:text-[#ec2795]">Shop</a>
+                    <i data-lucide="chevron-right" class="w-3 h-3"></i>
+                    <span>Serums & Essences</span>
+                    <i data-lucide="chevron-right" class="w-3 h-3"></i>
+                    <span class="text-stone-900">Advanced Snail Essence</span>
+                </div>
+            </div>
+
+            <div class="container-custom py-9 lg:py-14">
+                <div class="grid lg:grid-cols-2 gap-9 lg:gap-14 xl:gap-20 items-start">
+                    <!-- Product Gallery -->
+                    <div class="lg:sticky lg:top-28">
+                        <div class="relative bg-[#f8f6f4] overflow-hidden aspect-[.94]">
+                            <img id="mainProductImage"
+                                src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=1100&q=90"
+                                alt="Illustrative skincare product photography"
+                                class="w-full h-full object-cover transition-opacity duration-200">
+                            <span class="absolute top-5 left-5 bg-[#252424] text-white text-[10px] font-bold tracking-widest px-3 py-2">BEST SELLER</span>
+                            <button type="button" class="absolute top-5 right-5 w-11 h-11 rounded-full bg-white grid place-items-center hover:text-[#ec2795] transition" aria-label="Add to wishlist">
+                                <i data-lucide="heart" class="w-5"></i>
+                            </button>
+                            <button id="galleryPrev" type="button" class="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 grid place-items-center hover:bg-white" aria-label="Previous image">
+                                <i data-lucide="chevron-left" class="w-5"></i>
+                            </button>
+                            <button id="galleryNext" type="button" class="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 grid place-items-center hover:bg-white" aria-label="Next image">
+                                <i data-lucide="chevron-right" class="w-5"></i>
+                            </button>
+                            <div id="galleryCounter" class="absolute bottom-4 right-4 bg-white/90 px-3 py-2 text-xs">01 / 04</div>
+                        </div>
+
+                        <div id="productThumbnails" class="grid grid-cols-4 gap-3 mt-3">
+                            <button type="button" class="product-thumb active" aria-label="View product image 1" aria-pressed="true"
+                                    data-image="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=1100&q=90">
+                                <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=250&q=75" alt="Skincare product image 1">
+                            </button>
+                            <button type="button" class="product-thumb" aria-label="View product image 2" aria-pressed="false"
+                                    data-image="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=1100&q=90">
+                                <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=250&q=75" alt="Skincare product image 2">
+                            </button>
+                            <button type="button" class="product-thumb" aria-label="View product image 3" aria-pressed="false"
+                                    data-image="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=1100&q=90">
+                                <img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=250&q=75" alt="Skincare product image 3">
+                            </button>
+                            <button type="button" class="product-thumb" aria-label="View product image 4" aria-pressed="false"
+                                    data-image="https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&w=1100&q=90">
+                                <img src="https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&w=250&q=75" alt="Skincare product image 4">
+                            </button>
+                        </div>
+                        <p class="text-[11px] text-stone-400 mt-3">Illustrative photography. Replace with actual product images before launch.</p>
+                    </div>
+
+                    <!-- Product Information -->
+                    <div>
+                        <div class="flex items-center justify-between gap-4 mb-4">
+                            <a href="shop.html" class="text-xs font-bold uppercase tracking-[.2em] text-[#ec2795] hover:underline">COSRX</a>
+                            <span class="text-xs text-stone-400">SKU: WBP-001</span>
+                        </div>
+
+                        <h1 class="text-[clamp(34px,4vw,54px)] leading-[1.15] tracking-tight mb-4">Advanced Snail<br>96 Mucin Power Essence</h1>
+
+                        <div class="flex flex-wrap items-center gap-3 mb-6">
+                            <div class="flex items-center gap-1 text-[#e9a544]" aria-label="Example rating: 4.8 out of 5">
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4"></i>
+                            </div>
+                            <span class="text-xs font-semibold">4.8 / 5</span>
+                            <span class="text-xs text-stone-400">Illustrative rating</span>
+                        </div>
+
+                        <div class="flex flex-wrap items-center gap-4 mb-5">
+                            <strong class="text-3xl font-semibold">Rs. 2,650</strong>
+                            <del class="text-lg text-stone-400">Rs. 3,200</del>
+                            <span class="bg-[#fff0f7] text-[#ec2795] text-xs font-bold px-3 py-1.5">SAVE 17%</span>
+                        </div>
+
+                        <p class="text-stone-500 text-sm leading-8 mb-7">
+                            A lightweight Korean skincare essence designed to support hydration and leave skin feeling smooth. Add it to your routine after cleansing and toning.
+                        </p>
+
+                        <div class="grid grid-cols-2 gap-3 mb-8">
+                            <div class="bg-[#faf8f7] p-4">
+                                <span class="block text-[10px] text-stone-400 uppercase tracking-widest mb-2">Skin Type</span>
+                                <span class="text-sm font-medium">Various Skin Types</span>
+                            </div>
+                            <div class="bg-[#faf8f7] p-4">
+                                <span class="block text-[10px] text-stone-400 uppercase tracking-widest mb-2">Size</span>
+                                <span class="text-sm font-medium">100 ml</span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-2 mb-7">
+                            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                            <span class="text-sm font-medium text-stone-700">Stock status: Confirm availability</span>
+                        </div>
+
+                        <div class="mb-5">
+                            <label class="block text-xs font-bold uppercase tracking-widest mb-3">Quantity</label>
+                            <div class="flex items-center border border-stone-200 w-[145px] h-12">
+                                <button id="quantityMinus" type="button" class="w-12 h-full grid place-items-center hover:bg-stone-50" aria-label="Decrease quantity"><i data-lucide="minus" class="w-4"></i></button>
+                                <input id="productQuantity" type="number" min="1" max="20" value="1" class="w-12 text-center outline-none text-sm font-semibold" aria-label="Product quantity">
+                                <button id="quantityPlus" type="button" class="w-12 h-full grid place-items-center hover:bg-stone-50" aria-label="Increase quantity"><i data-lucide="plus" class="w-4"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row gap-3 mb-5">
+                            <a href="cart.html" type="button" class="btn btn-dark flex-1 py-4" title="Connect this action to your Laravel cart route">
+                                <i data-lucide="shopping-bag" class="w-4"></i> Add to Cart
+                            </a>
+                            <button type="button" class="btn btn-outline flex-1 py-4" title="Connect this action to your Laravel checkout route">Buy Now <i data-lucide="arrow-up-right" class="w-4"></i></button>
+                        </div>
+
+                        <p class="text-xs text-stone-400 mb-8">Cart and checkout buttons are frontend placeholders until the Laravel backend is connected.</p>
+
+                        <!-- Delivery Benefits -->
+                        <div class="border-t border-b border-stone-200 divide-y divide-stone-100">
+                            <div class="flex gap-4 items-start py-5">
+                                <i data-lucide="truck" class="w-5 h-5 text-[#ec2795] shrink-0"></i>
+                                <div><h3 class="font-sans text-sm font-semibold mb-1">Delivery Across Nepal</h3><p class="text-xs text-stone-500 leading-6">Delivery options and charges are confirmed at checkout.</p></div>
+                            </div>
+                            <div class="flex gap-4 items-start py-5">
+                                <i data-lucide="shield-check" class="w-5 h-5 text-[#ec2795] shrink-0"></i>
+                                <div><h3 class="font-sans text-sm font-semibold mb-1">Product Information</h3><p class="text-xs text-stone-500 leading-6">Check packaging and product details before use.</p></div>
+                            </div>
+                            <div class="flex gap-4 items-start py-5">
+                                <i data-lucide="message-circle" class="w-5 h-5 text-[#ec2795] shrink-0"></i>
+                                <div><h3 class="font-sans text-sm font-semibold mb-1">Need Assistance?</h3><p class="text-xs text-stone-500 leading-6">Contact our team for product or order enquiries.</p></div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-wrap items-center gap-5 mt-7 text-xs text-stone-500">
+                            <span>Share:</span>
+                            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="hover:text-[#ec2795]">Facebook</a>
+                            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="hover:text-[#ec2795]">Instagram</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Details Tabs -->
+            <section class="border-t border-stone-100 py-16 lg:py-20">
+                <div class="container-custom max-w-[1100px]">
+                    <div class="flex gap-7 md:gap-12 border-b border-stone-200 overflow-x-auto whitespace-nowrap" role="tablist" aria-label="Product information">
+                        <button id="tab-description" class="detail-tab active" data-tab="description" role="tab" aria-controls="panel-description" aria-selected="true">Description</button>
+                        <button id="tab-ingredients" class="detail-tab" data-tab="ingredients" role="tab" aria-controls="panel-ingredients" aria-selected="false">Ingredients</button>
+                        <button id="tab-usage" class="detail-tab" data-tab="usage" role="tab" aria-controls="panel-usage" aria-selected="false">How to Use</button>
+                        <button id="tab-reviews" class="detail-tab" data-tab="reviews" role="tab" aria-controls="panel-reviews" aria-selected="false">Reviews</button>
+                    </div>
+                    <div class="pt-9 text-sm text-stone-600 leading-8">
+                        <div id="panel-description" class="detail-panel" role="tabpanel" aria-labelledby="tab-description">
+                            <h2 class="text-2xl text-stone-900 mb-4">Hydration for Your Daily Routine</h2>
+                            <p class="mb-4">COSRX Advanced Snail 96 Mucin Power Essence is a Korean skincare essence formulated with snail secretion filtrate. It is intended to help hydrate the skin and support a smoother-feeling complexion.</p>
+                            <p>Its lightweight texture makes it suitable for layering with other skincare products. Individual results can vary depending on skin type and routine.</p>
+                        </div>
+                        <div id="panel-ingredients" class="detail-panel hidden" role="tabpanel" aria-labelledby="tab-ingredients">
+                            <h2 class="text-2xl text-stone-900 mb-4">Key Ingredient</h2>
+                            <p><strong>Snail Secretion Filtrate:</strong> A commonly used ingredient in Korean skincare products intended to support skin hydration.</p>
+                            <p class="mt-4">Refer to the product packaging or manufacturer's official ingredient list for the complete and current formulation, especially if you have ingredient sensitivities.</p>
+                        </div>
+                        <div id="panel-usage" class="detail-panel hidden" role="tabpanel" aria-labelledby="tab-usage">
+                            <h2 class="text-2xl text-stone-900 mb-4">How to Use</h2>
+                            <ol class="list-decimal pl-5 space-y-2">
+                                <li>Cleanse your face and apply toner if used in your routine.</li>
+                                <li>Apply a small amount of essence to your face.</li>
+                                <li>Gently pat until absorbed.</li>
+                                <li>Follow with moisturiser and sunscreen during the day.</li>
+                            </ol>
+                            <p class="mt-4">Follow the product label and patch-test new products if your skin is sensitive.</p>
+                        </div>
+                        <div id="panel-reviews" class="detail-panel hidden" role="tabpanel" aria-labelledby="tab-reviews">
+                            <h2 class="text-2xl text-stone-900 mb-4">Customer Reviews</h2>
+                            <p>Verified customer reviews will appear here once the review feature is connected to Laravel.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Related Products -->
+            <section class="bg-[#faf8f7] py-16 lg:py-20">
+                <div class="container-custom">
+                    <div class="flex items-end justify-between gap-4 mb-9">
+                        <div>
+                            <p class="section-label mb-3">Complete Your Routine</p>
+                            <h2 class="section-title">You May Also Like</h2>
+                        </div>
+                        <a href="shop.html" class="hidden sm:flex items-center gap-2 text-xs font-bold uppercase tracking-widest">Shop All <i data-lucide="arrow-right" class="w-4"></i></a>
+                    </div>
+                    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+                        <article class="group">
+                            <a href="product.html" class="block overflow-hidden aspect-[.85] bg-white"><img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=600&q=80" alt="Illustrative photo for Glow Deep Serum" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"></a>
+                            <div class="pt-4"><p class="product-brand">Beauty of Joseon</p><h3 class="font-sans text-sm font-medium">Glow Deep Serum</h3><strong class="block text-sm mt-2">Rs. 2,450</strong></div>
+                        </article>
+                        <article class="group">
+                            <a href="product.html" class="block overflow-hidden aspect-[.85] bg-white"><img src="https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&w=600&q=80" alt="Illustrative photo for Heartleaf Soothing Toner" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"></a>
+                            <div class="pt-4"><p class="product-brand">Anua</p><h3 class="font-sans text-sm font-medium">Heartleaf Soothing Toner</h3><strong class="block text-sm mt-2">Rs. 2,800</strong></div>
+                        </article>
+                        <article class="group">
+                            <a href="product.html" class="block overflow-hidden aspect-[.85] bg-white"><img src="https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=600&q=80" alt="Illustrative photo for Centella Calming Ampoule" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"></a>
+                            <div class="pt-4"><p class="product-brand">SKIN1004</p><h3 class="font-sans text-sm font-medium">Centella Calming Ampoule</h3><strong class="block text-sm mt-2">Rs. 2,900</strong></div>
+                        </article>
+                        <article class="group">
+                            <a href="product.html" class="block overflow-hidden aspect-[.85] bg-white"><img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=600&q=80" alt="Illustrative photo for Barrier Repair Cream" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"></a>
+                            <div class="pt-4"><p class="product-brand">Torriden</p><h3 class="font-sans text-sm font-medium">Barrier Repair Cream</h3><strong class="block text-sm mt-2">Rs. 3,100</strong></div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-[#252424] text-white">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 py-16">
+                <div>
+                    <div class="flex items-center gap-3 mb-5">
+                        <span class="w-11 h-11 rounded-full bg-[#ec2795] grid place-items-center text-xl font-bold">W</span>
+                        <div class="leading-tight"><strong class="text-sm">WORLD BEAUTY</strong><p class="text-[10px] tracking-[.3em] text-pink-300">POINT</p></div>
+                    </div>
+                    <p class="text-sm text-white/60 leading-7">Explore Korean skincare with World Beauty Point, based in Kathmandu, Nepal.</p>
+                    <a href="https://www.instagram.com/world_beauty_point/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="inline-block mt-5"><i data-lucide="instagram" class="w-5"></i></a>
+                </div>
+                <div>
+                    <h3 class="font-sans font-bold text-sm uppercase tracking-widest mb-5">Quick Links</h3>
+                    <div class="flex flex-col gap-3 text-sm text-white/60">
+                        <a href="#home" class="hover:text-white">Home</a>
+                        <a href="#categories" class="hover:text-white">Shop All</a>
+                        <a href="#about" class="hover:text-white">About Us</a>
+                        <a href="#contact" class="hover:text-white">Contact</a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-sans font-bold text-sm uppercase tracking-widest mb-5">Customer Care</h3>
+                    <div class="flex flex-col gap-3 text-sm text-white/60">
+                        <a href="mailto:worldbeautypoint@gmail.com?subject=Shopping%20Information" class="hover:text-white">Shopping Information</a>
+                        <a href="mailto:worldbeautypoint@gmail.com?subject=Returns%20and%20Refunds" class="hover:text-white">Returns & Refunds</a>
+                        <a href="mailto:worldbeautypoint@gmail.com?subject=Privacy%20Enquiry" class="hover:text-white">Privacy Enquiry</a>
+                        <a href="mailto:worldbeautypoint@gmail.com?subject=Terms%20and%20Conditions" class="hover:text-white">Terms & Conditions</a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-sans font-bold text-sm uppercase tracking-widest mb-5">Visit & Connect</h3>
+                    <div class="flex flex-col gap-3 text-sm text-white/60">
+                        <p>Kathmandu, Nepal</p>
+                        <a href="tel:+9779851403216" class="hover:text-white">+977 9851403216</a>
+                        <a href="mailto:worldbeautypoint@gmail.com" class="hover:text-white break-all">worldbeautypoint@gmail.com</a>
+                        <a href="https://worldbeautypoint.com/" target="_blank" rel="noopener noreferrer" class="hover:text-white">worldbeautypoint.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-white/15 py-6 flex flex-col sm:flex-row justify-between gap-3 text-xs text-white/50">
+                <p>© 2026 World Beauty Point. All rights reserved.</p>
+                <p>Frontend concept • Product prices and images are illustrative</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

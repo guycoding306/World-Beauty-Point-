@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Beauty Point | Korean Skincare Nepal</title>
+    <meta name="description" content="Discover Korean skincare products at World Beauty Point, Kathmandu, Nepal.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Announcement Bar -->
+    <div class="bg-[#252424] text-white text-center py-2.5 px-4 text-[10px] sm:text-xs tracking-widest">
+        AUTHENTIC KOREAN SKINCARE <span class="mx-3 text-white/40">✦</span> NEW ARRIVALS & OFFERS <span class="hidden sm:inline mx-3 text-white/40">✦</span><span class="hidden sm:inline">DELIVERY ACROSS NEPAL</span>
+    </div>
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-stone-100">
+        <div class="container-custom h-[76px] flex items-center justify-between gap-4">
+            <button id="menuToggle" class="lg:hidden p-2" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu"><i data-lucide="menu"></i></button>
+            <a href="#home" class="flex items-center gap-3 shrink-0">
+                <div class="w-11 h-11 rounded-full border-2 border-[#ec2795] bg-[#fff0f7] grid place-items-center text-[#ec2795] font-bold text-xl">W</div>
+                <div class="leading-tight">
+                    <strong class="block text-sm sm:text-base">WORLD BEAUTY</strong>
+                    <span class="text-[10px] tracking-[.3em] text-[#ec2795]">POINT</span>
+                </div>
+            </a>
+            <nav class="hidden lg:flex items-center gap-5 xl:gap-7">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="shop.html" class="nav-link">Shop All</a>
+                <a href="shop.html" class="nav-link">Skincare</a>
+                <a href="brands.html" class="nav-link">Brands</a>
+                <a href="shop.html" class="nav-link">New Arrivals</a>
+                <a href="shop.html" class="nav-link">Best Sellers</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <div class="flex items-center gap-1">
+                <a href="shop.html" class="p-2 hover:text-[#ec2795]" aria-label="Search products"><i data-lucide="search" class="w-5"></i></a>
+                <a href="login.html" class="hidden sm:block p-2 hover:text-[#ec2795]" aria-label="Account"><i data-lucide="user-round" class="w-5"></i></a>
+                <a href="shop.html" class="p-2 hover:text-[#ec2795]" aria-label="Wishlist"><i data-lucide="heart" class="w-5"></i></a>
+                <a href="shop.html" class="p-2 hover:text-[#ec2795]" aria-label="Shopping bag"><i data-lucide="shopping-bag" class="w-5"></i></a>
+            </div>
+        </div>
+        <nav id="mobileMenu" class="hidden lg:hidden bg-white border-t border-stone-100 px-6 py-5">
+            <div class="flex flex-col gap-4 text-sm font-medium">
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop All</a>
+                <a href="shop.html">Skincare</a>
+                <a href="brands.html">Brands</a>
+                <a href="shop.html">New Arrivals</a>
+                <a href="shop.html">Best Sellers</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Shopping Cart Page -->
+    <main id="cartPage" class="bg-white">
+        <!-- Breadcrumb -->
+        <div class="border-b border-stone-100">
+            <div class="container-custom py-4 flex items-center gap-2 text-xs text-stone-500">
+                <a href="index.html" class="hover:text-[#ec2795]">Home</a>
+                <i data-lucide="chevron-right" class="w-3 h-3"></i>
+                <span class="text-stone-900">Shopping Cart</span>
+            </div>
+        </div>
+
+        <!-- Page Heading -->
+        <section class="bg-[#faf8f7] py-12 md:py-16">
+            <div class="container-custom text-center">
+                <p class="section-label mb-3">Your Beauty Bag</p>
+                <h1 class="text-[clamp(36px,5vw,58px)] leading-tight mb-4">Shopping Cart</h1>
+                <p class="text-sm text-stone-500">Your favourite skincare essentials, all in one place.</p>
+            </div>
+        </section>
+
+        <div class="container-custom py-10 lg:py-16">
+            <!-- Cart Content -->
+            <div id="cartContent" class="grid lg:grid-cols-[minmax(0,1fr)_360px] xl:grid-cols-[minmax(0,1fr)_400px] gap-9 xl:gap-14 items-start">
+                <!-- Cart Items -->
+                <section class="min-w-0">
+                    <div class="flex items-center justify-between border-b border-stone-200 pb-5 mb-2">
+                        <h2 class="font-sans text-xl font-semibold">Your Items <span id="cartItemCount" class="text-stone-400 font-normal">(2)</span></h2>
+                        <button id="clearCart" type="button" class="text-xs text-stone-500 underline underline-offset-4 hover:text-[#ec2795]">Clear Cart</button>
+                    </div>
+
+                    <!-- Item 1 -->
+                    <article class="cart-item flex gap-4 sm:gap-6 py-7 border-b border-stone-100" data-price="2650" data-product-id="cosrx-snail-essence">
+                        <a href="product.html" class="w-[100px] sm:w-[145px] aspect-[.85] shrink-0 bg-[#f8f6f4] overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=400&q=80" alt="Illustrative skincare product photo" class="w-full h-full object-cover">
+                        </a>
+                        <div class="flex-1 min-w-0 flex flex-col justify-between gap-4">
+                            <div>
+                                <div class="flex justify-between items-start gap-3">
+                                    <div>
+                                        <p class="text-[10px] font-bold uppercase tracking-[.16em] text-stone-400 mb-2">COSRX</p>
+                                        <a href="product.html" class="block font-sans font-semibold text-sm sm:text-base leading-6 hover:text-[#ec2795]">Advanced Snail 96 Mucin Power Essence</a>
+                                        <p class="text-xs text-stone-400 mt-2">100 ml</p>
+                                    </div>
+                                    <button type="button" class="remove-cart-item text-stone-400 hover:text-red-500 transition" aria-label="Remove COSRX essence">
+                                        <i data-lucide="x" class="w-4 h-4"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap items-end justify-between gap-3">
+                                <div class="cart-quantity flex items-center border border-stone-200 h-10">
+                                    <button type="button" class="cart-qty-minus w-10 h-full grid place-items-center hover:bg-stone-50" aria-label="Decrease quantity"><i data-lucide="minus" class="w-3.5"></i></button>
+                                    <input type="number" min="1" max="20" value="1" class="cart-qty-input w-10 text-center text-sm outline-none" aria-label="COSRX quantity">
+                                    <button type="button" class="cart-qty-plus w-10 h-full grid place-items-center hover:bg-stone-50" aria-label="Increase quantity"><i data-lucide="plus" class="w-3.5"></i></button>
+                                </div>
+                                <div class="text-right">
+                                    <p class="cart-line-total font-semibold text-sm sm:text-base">Rs. 2,650</p>
+                                    <p class="text-xs text-stone-400 mt-1">Rs. 2,650 each</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Item 2 -->
+                    <article class="cart-item flex gap-4 sm:gap-6 py-7 border-b border-stone-100" data-price="2450" data-product-id="boj-glow-serum">
+                        <a href="product.html" class="w-[100px] sm:w-[145px] aspect-[.85] shrink-0 bg-[#f8f6f4] overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=400&q=80" alt="Illustrative skincare product photo" class="w-full h-full object-cover">
+                        </a>
+                        <div class="flex-1 min-w-0 flex flex-col justify-between gap-4">
+                            <div>
+                                <div class="flex justify-between items-start gap-3">
+                                    <div>
+                                        <p class="text-[10px] font-bold uppercase tracking-[.16em] text-stone-400 mb-2">Beauty of Joseon</p>
+                                        <a href="product.html" class="block font-sans font-semibold text-sm sm:text-base leading-6 hover:text-[#ec2795]">Glow Deep Serum</a>
+                                        <p class="text-xs text-stone-400 mt-2">30 ml</p>
+                                    </div>
+                                    <button type="button" class="remove-cart-item text-stone-400 hover:text-red-500 transition" aria-label="Remove Glow Deep Serum">
+                                        <i data-lucide="x" class="w-4 h-4"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap items-end justify-between gap-3">
+                                <div class="cart-quantity flex items-center border border-stone-200 h-10">
+                                    <button type="button" class="cart-qty-minus w-10 h-full grid place-items-center hover:bg-stone-50" aria-label="Decrease quantity"><i data-lucide="minus" class="w-3.5"></i></button>
+                                    <input type="number" min="1" max="20" value="1" class="cart-qty-input w-10 text-center text-sm outline-none" aria-label="Glow Deep Serum quantity">
+                                    <button type="button" class="cart-qty-plus w-10 h-full grid place-items-center hover:bg-stone-50" aria-label="Increase quantity"><i data-lucide="plus" class="w-3.5"></i></button>
+                                </div>
+                                <div class="text-right">
+                                    <p class="cart-line-total font-semibold text-sm sm:text-base">Rs. 2,450</p>
+                                    <p class="text-xs text-stone-400 mt-1">Rs. 2,450 each</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Continue Shopping -->
+                    <a href="shop.html" class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest mt-8 hover:text-[#ec2795] transition">
+                        <i data-lucide="arrow-left" class="w-4"></i> Continue Shopping
+                    </a>
+                </section>
+
+                <!-- Order Summary -->
+                <aside class="bg-[#faf8f7] p-6 sm:p-8 lg:sticky lg:top-28">
+                    <h2 class="font-sans text-xl font-semibold mb-7">Order Summary</h2>
+                    <div class="space-y-5 pb-6 border-b border-stone-200">
+                        <div class="flex justify-between text-sm">
+                            <span class="text-stone-500">Subtotal</span>
+                            <span id="cartSubtotal" class="font-medium">Rs. 5,100</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-stone-500">Shipping</span>
+                            <span class="text-stone-500">Calculated at checkout</span>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center py-6">
+                        <span class="font-sans font-semibold">Subtotal</span>
+                        <strong id="cartTotal" class="text-2xl">Rs. 5,100</strong>
+                    </div>
+                    <p class="text-xs text-stone-500 leading-6 mb-6">Shipping charges and any applicable discounts will be confirmed at checkout.</p>
+
+                    <a href="checkout.html" id="checkoutButton" class="flex items-center justify-center gap-3 bg-[#252424] text-white py-4 text-xs font-bold uppercase tracking-[.13em] hover:bg-[#ec2795] transition">
+                        Proceed to Checkout <i data-lucide="arrow-right" class="w-4"></i>
+                    </a>
+
+                    <div class="mt-7 pt-6 border-t border-stone-200 space-y-4">
+                        <div class="flex items-center gap-3 text-xs text-stone-600">
+                            <i data-lucide="shield-check" class="w-5 h-5 text-[#ec2795]"></i> Secure checkout experience
+                        </div>
+                        <div class="flex items-center gap-3 text-xs text-stone-600">
+                            <i data-lucide="truck" class="w-5 h-5 text-[#ec2795]"></i> Delivery options across Nepal
+                        </div>
+                        <div class="flex items-center gap-3 text-xs text-stone-600">
+                            <i data-lucide="headphones" class="w-5 h-5 text-[#ec2795]"></i> Customer support
+                        </div>
+                    </div>
+                </aside>
+            </div>
+
+            <!-- Empty Cart State -->
+            <section id="emptyCart" class="hidden py-16 md:py-24 text-center">
+                <div class="w-24 h-24 rounded-full bg-[#faf0f5] grid place-items-center mx-auto mb-7">
+                    <i data-lucide="shopping-bag" class="w-10 h-10 text-[#ec2795]"></i>
+                </div>
+                <h2 class="text-3xl md:text-4xl mb-4">Your Bag Is Empty</h2>
+                <p class="text-sm text-stone-500 max-w-md mx-auto mb-8 leading-7">Looks like you haven't added any skincare essentials yet. Explore our collection and discover something you'll love.</p>
+                <a href="shop.html" class="inline-flex items-center gap-3 bg-[#252424] text-white px-8 py-4 text-xs font-bold uppercase tracking-widest hover:bg-[#ec2795] transition">
+                    Explore Products <i data-lucide="arrow-right" class="w-4"></i>
+                </a>
+            </section>
+        </div>
+    </main>
+
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-[#252424] text-white">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 py-16">
+                <div>
+                    <div class="flex items-center gap-3 mb-5">
+                        <span class="w-11 h-11 rounded-full bg-[#ec2795] grid place-items-center text-xl font-bold">W</span>
+                        <div class="leading-tight"><strong class="text-sm">WORLD BEAUTY</strong><p class="text-[10px] tracking-[.3em] text-pink-300">POINT</p></div>
+                    </div>
+                    <p class="text-sm text-white/60 leading-7">Explore Korean skincare with World Beauty Point, based in Kathmandu, Nepal.</p>
+                    <a href="https://www.instagram.com/world_beauty_point/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="inline-block mt-5"><i data-lucide="instagram" class="w-5"></i></a>
+                </div>
+                <div>
+                    <h3 class="font-sans font-bold text-sm uppercase tracking-widest mb-5">Quick Links</h3>
+                    <div class="flex flex-col gap-3 text-sm text-white/60">
+                        <a href="#home" class="hover:text-white">Home</a>
+                        <a href="#categories" class="hover:text-white">Shop All</a>
+                        <a href="#about" class="hover:text-white">About Us</a>
+                        <a href="#contact" class="hover:text-white">Contact</a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-sans font-bold text-sm uppercase tracking-widest mb-5">Customer Care</h3>
+                    <div class="flex flex-col gap-3 text-sm text-white/60">
+                        <a href="mailto:worldbeautypoint@gmail.com?subject=Shopping%20Information" class="hover:text-white">Shopping Information</a>
+                        <a href="mailto:worldbeautypoint@gmail.com?subject=Returns%20and%20Refunds" class="hover:text-white">Returns & Refunds</a>
+                        <a href="mailto:worldbeautypoint@gmail.com?subject=Privacy%20Enquiry" class="hover:text-white">Privacy Enquiry</a>
+                        <a href="mailto:worldbeautypoint@gmail.com?subject=Terms%20and%20Conditions" class="hover:text-white">Terms & Conditions</a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-sans font-bold text-sm uppercase tracking-widest mb-5">Visit & Connect</h3>
+                    <div class="flex flex-col gap-3 text-sm text-white/60">
+                        <p>Kathmandu, Nepal</p>
+                        <a href="tel:+9779851403216" class="hover:text-white">+977 9851403216</a>
+                        <a href="mailto:worldbeautypoint@gmail.com" class="hover:text-white break-all">worldbeautypoint@gmail.com</a>
+                        <a href="https://worldbeautypoint.com/" target="_blank" rel="noopener noreferrer" class="hover:text-white">worldbeautypoint.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-white/15 py-6 flex flex-col sm:flex-row justify-between gap-3 text-xs text-white/50">
+                <p>© 2026 World Beauty Point. All rights reserved.</p>
+                <p>Frontend concept • Product prices and images are illustrative</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

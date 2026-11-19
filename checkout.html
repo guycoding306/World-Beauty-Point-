@@ -1,0 +1,365 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Beauty Point | Korean Skincare Nepal</title>
+    <meta name="description" content="Discover Korean skincare products at World Beauty Point, Kathmandu, Nepal.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Announcement Bar -->
+    <div class="bg-[#252424] text-white text-center py-2.5 px-4 text-[10px] sm:text-xs tracking-widest">
+        AUTHENTIC KOREAN SKINCARE <span class="mx-3 text-white/40">✦</span> NEW ARRIVALS & OFFERS <span class="hidden sm:inline mx-3 text-white/40">✦</span><span class="hidden sm:inline">DELIVERY ACROSS NEPAL</span>
+    </div>
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-stone-100">
+        <div class="container-custom h-[76px] flex items-center justify-between gap-4">
+            <button id="menuToggle" class="lg:hidden p-2" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu"><i data-lucide="menu"></i></button>
+            <a href="#home" class="flex items-center gap-3 shrink-0">
+                <div class="w-11 h-11 rounded-full border-2 border-[#ec2795] bg-[#fff0f7] grid place-items-center text-[#ec2795] font-bold text-xl">W</div>
+                <div class="leading-tight">
+                    <strong class="block text-sm sm:text-base">WORLD BEAUTY</strong>
+                    <span class="text-[10px] tracking-[.3em] text-[#ec2795]">POINT</span>
+                </div>
+            </a>
+            <nav class="hidden lg:flex items-center gap-5 xl:gap-7">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="shop.html" class="nav-link">Shop All</a>
+                <a href="shop.html" class="nav-link">Skincare</a>
+                <a href="brands.html" class="nav-link">Brands</a>
+                <a href="shop.html" class="nav-link">New Arrivals</a>
+                <a href="shop.html" class="nav-link">Best Sellers</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <div class="flex items-center gap-1">
+                <a href="shop.html" class="p-2 hover:text-[#ec2795]" aria-label="Search products"><i data-lucide="search" class="w-5"></i></a>
+                <a href="login.html" class="hidden sm:block p-2 hover:text-[#ec2795]" aria-label="Account"><i data-lucide="user-round" class="w-5"></i></a>
+                <a href="shop.html" class="p-2 hover:text-[#ec2795]" aria-label="Wishlist"><i data-lucide="heart" class="w-5"></i></a>
+                <a href="shop.html" class="p-2 hover:text-[#ec2795]" aria-label="Shopping bag"><i data-lucide="shopping-bag" class="w-5"></i></a>
+            </div>
+        </div>
+        <nav id="mobileMenu" class="hidden lg:hidden bg-white border-t border-stone-100 px-6 py-5">
+            <div class="flex flex-col gap-4 text-sm font-medium">
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop All</a>
+                <a href="shop.html">Skincare</a>
+                <a href="brands.html">Brands</a>
+                <a href="shop.html">New Arrivals</a>
+                <a href="shop.html">Best Sellers</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="checkoutPage" class="bg-white">
+        <!-- Breadcrumb -->
+        <div class="border-b border-stone-100">
+            <div class="container-custom py-4 flex flex-wrap items-center gap-2 text-xs text-stone-500">
+                <a href="index.html" class="hover:text-[#ec2795]">Home</a>
+                <i data-lucide="chevron-right" class="w-3 h-3"></i>
+                <a href="cart.html" class="hover:text-[#ec2795]">Cart</a>
+                <i data-lucide="chevron-right" class="w-3 h-3"></i>
+                <span class="text-stone-900">Checkout</span>
+            </div>
+        </div>
+
+        <!-- Heading -->
+        <section class="bg-[#faf8f7] py-12 md:py-16">
+            <div class="container-custom text-center">
+                <p class="section-label mb-3">Almost There</p>
+                <h1 class="text-[clamp(36px,5vw,58px)] leading-tight mb-4">Secure Checkout</h1>
+                <p class="text-sm text-stone-500">Just a few details before your beauty essentials are on their way.</p>
+            </div>
+        </section>
+
+        <div class="container-custom py-10 lg:py-16">
+            <!-- Progress -->
+            <div class="flex items-center justify-center gap-3 sm:gap-6 mb-12 text-xs font-semibold">
+                <a href="cart.html" class="flex items-center gap-2 text-stone-500 hover:text-[#ec2795]">
+                    <span class="w-7 h-7 rounded-full bg-stone-100 grid place-items-center"><i data-lucide="check" class="w-4"></i></span>
+                    Cart
+                </a>
+                <span class="w-8 sm:w-16 h-px bg-stone-200"></span>
+                <span class="flex items-center gap-2 text-[#ec2795]">
+                    <span class="w-7 h-7 rounded-full bg-[#ec2795] text-white grid place-items-center">2</span>
+                    Checkout
+                </span>
+                <span class="w-8 sm:w-16 h-px bg-stone-200"></span>
+                <span class="flex items-center gap-2 text-stone-400">
+                    <span class="w-7 h-7 rounded-full border border-stone-200 grid place-items-center">3</span>
+                    Confirmation
+                </span>
+            </div>
+
+            <form id="checkoutForm" class="grid lg:grid-cols-[minmax(0,1fr)_380px] xl:grid-cols-[minmax(0,1fr)_420px] gap-10 xl:gap-16 items-start">
+                <!-- Customer Details -->
+                <div class="min-w-0 space-y-11">
+                    <!-- Contact Information -->
+                    <section>
+                        <div class="flex items-center justify-between gap-3 border-b border-stone-200 pb-5 mb-7">
+                            <h2 class="font-sans text-xl font-semibold">01. Contact Information</h2>
+                            <i data-lucide="user-round" class="w-5 h-5 text-stone-400"></i>
+                        </div>
+                        <div class="grid sm:grid-cols-2 gap-5">
+                            <div>
+                                <label for="firstName" class="checkout-label">First Name <span>*</span></label>
+                                <input id="firstName" name="first_name" type="text" autocomplete="given-name" placeholder="Your first name" class="checkout-input" required>
+                            </div>
+                            <div>
+                                <label for="lastName" class="checkout-label">Last Name <span>*</span></label>
+                                <input id="lastName" name="last_name" type="text" autocomplete="family-name" placeholder="Your last name" class="checkout-input" required>
+                            </div>
+                            <div>
+                                <label for="email" class="checkout-label">Email Address <span>*</span></label>
+                                <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" class="checkout-input" required>
+                            </div>
+                            <div>
+                                <label for="phone" class="checkout-label">Phone Number <span>*</span></label>
+                                <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="98XXXXXXXX" pattern="9[678][0-9]{8}" title="Enter a valid 10-digit Nepali mobile number" class="checkout-input" required>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Delivery Address -->
+                    <section>
+                        <div class="flex items-center justify-between gap-3 border-b border-stone-200 pb-5 mb-7">
+                            <h2 class="font-sans text-xl font-semibold">02. Delivery Address</h2>
+                            <i data-lucide="map-pin" class="w-5 h-5 text-stone-400"></i>
+                        </div>
+                        <div class="grid sm:grid-cols-2 gap-5">
+                            <div class="sm:col-span-2">
+                                <label for="country" class="checkout-label">Country</label>
+                                <input id="country" type="text" value="Nepal" class="checkout-input bg-[#faf8f7]" readonly>
+                            </div>
+                            <div>
+                                <label for="province" class="checkout-label">Province <span>*</span></label>
+                                <select id="province" name="province" class="checkout-input" required>
+                                    <option value="">Select province</option>
+                                    <option value="Koshi">Koshi</option>
+                                    <option value="Madhesh">Madhesh</option>
+                                    <option value="Bagmati">Bagmati</option>
+                                    <option value="Gandaki">Gandaki</option>
+                                    <option value="Lumbini">Lumbini</option>
+                                    <option value="Karnali">Karnali</option>
+                                    <option value="Sudurpashchim">Sudurpashchim</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="city" class="checkout-label">City / Municipality <span>*</span></label>
+                                <input id="city" name="city" type="text" autocomplete="address-level2" placeholder="e.g. Kathmandu" class="checkout-input" required>
+                            </div>
+                            <div class="sm:col-span-2">
+                                <label for="address" class="checkout-label">Street Address <span>*</span></label>
+                                <input id="address" name="address" type="text" autocomplete="street-address" placeholder="Street, tole, house or building number" class="checkout-input" required>
+                            </div>
+                            <div class="sm:col-span-2">
+                                <label for="landmark" class="checkout-label">Nearby Landmark <span class="text-stone-400 font-normal">(Optional)</span></label>
+                                <input id="landmark" name="landmark" type="text" placeholder="e.g. Near City Centre" class="checkout-input">
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Delivery Method -->
+                    <section>
+                        <div class="flex items-center justify-between gap-3 border-b border-stone-200 pb-5 mb-7">
+                            <h2 class="font-sans text-xl font-semibold">03. Delivery Method</h2>
+                            <i data-lucide="truck" class="w-5 h-5 text-stone-400"></i>
+                        </div>
+                        <label class="checkout-choice selected">
+                            <input type="radio" name="delivery_method" value="standard" checked class="accent-[#ec2795] w-4 h-4">
+                            <span class="flex-1">
+                                <span class="block text-sm font-semibold mb-1">Standard Delivery</span>
+                                <span class="block text-xs text-stone-500 leading-6">Available across supported locations in Nepal. Delivery charge confirmed when your order is processed.</span>
+                            </span>
+                            <i data-lucide="package" class="w-5 h-5 text-stone-400 shrink-0"></i>
+                        </label>
+                    </section>
+
+                    <!-- Payment Method -->
+                    <section>
+                        <div class="flex items-center justify-between gap-3 border-b border-stone-200 pb-5 mb-7">
+                            <h2 class="font-sans text-xl font-semibold">04. Payment Method</h2>
+                            <i data-lucide="wallet" class="w-5 h-5 text-stone-400"></i>
+                        </div>
+                        <div class="space-y-3">
+                            <label class="checkout-choice selected">
+                                <input type="radio" name="payment_method" value="cod" checked class="accent-[#ec2795] w-4 h-4">
+                                <span class="flex-1">
+                                    <span class="block text-sm font-semibold mb-1">Cash on Delivery</span>
+                                    <span class="block text-xs text-stone-500">Pay when your order arrives, where available.</span>
+                                </span>
+                                <i data-lucide="banknote" class="w-5 h-5 text-stone-400 shrink-0"></i>
+                            </label>
+                            <label class="checkout-choice">
+                                <input type="radio" name="payment_method" value="esewa" class="accent-[#ec2795] w-4 h-4" disabled>
+                                <span class="flex-1">
+                                    <span class="block text-sm font-semibold mb-1">eSewa <span class="text-[10px] font-normal text-stone-400">(Coming Soon)</span></span>
+                                    <span class="block text-xs text-stone-500">Online payment integration pending.</span>
+                                </span>
+                                <i data-lucide="smartphone" class="w-5 h-5 text-stone-400 shrink-0"></i>
+                            </label>
+                            <label class="checkout-choice">
+                                <input type="radio" name="payment_method" value="khalti" class="accent-[#ec2795] w-4 h-4" disabled>
+                                <span class="flex-1">
+                                    <span class="block text-sm font-semibold mb-1">Khalti <span class="text-[10px] font-normal text-stone-400">(Coming Soon)</span></span>
+                                    <span class="block text-xs text-stone-500">Online payment integration pending.</span>
+                                </span>
+                                <i data-lucide="smartphone" class="w-5 h-5 text-stone-400 shrink-0"></i>
+                            </label>
+                        </div>
+                    </section>
+
+                    <!-- Order Note -->
+                    <section>
+                        <h2 class="font-sans text-xl font-semibold mb-5">Order Notes <span class="text-sm text-stone-400 font-normal">(Optional)</span></h2>
+                        <textarea name="order_notes" rows="4" placeholder="Special delivery instructions or anything we should know..." class="checkout-input resize-y"></textarea>
+                    </section>
+                </div>
+
+                <!-- Order Summary -->
+                <aside class="lg:sticky lg:top-28 bg-[#faf8f7] p-6 sm:p-8">
+                    <div class="flex items-center justify-between mb-7">
+                        <h2 class="font-sans text-xl font-semibold">Your Order</h2>
+                        <a href="cart.html" class="text-xs text-stone-500 underline hover:text-[#ec2795]">Edit Cart</a>
+                    </div>
+
+                    <div class="space-y-5 pb-7 border-b border-stone-200">
+                        <!-- Product 1 -->
+                        <div class="flex items-center gap-4">
+                            <div class="relative w-[75px] h-[88px] bg-white shrink-0">
+                                <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=250&q=80" alt="Illustrative skincare product image" class="w-full h-full object-cover">
+                                <span class="absolute -top-2 -right-2 w-5 h-5 rounded-full bg-stone-800 text-white text-[10px] grid place-items-center">1</span>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <p class="text-[10px] text-stone-400 uppercase tracking-widest mb-1">COSRX</p>
+                                <h3 class="text-xs sm:text-sm font-semibold leading-5">Advanced Snail 96 Mucin Power Essence</h3>
+                                <p class="text-xs text-stone-400 mt-1">100 ml</p>
+                            </div>
+                            <strong class="text-xs sm:text-sm whitespace-nowrap">Rs. 2,650</strong>
+                        </div>
+
+                        <!-- Product 2 -->
+                        <div class="flex items-center gap-4">
+                            <div class="relative w-[75px] h-[88px] bg-white shrink-0">
+                                <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=250&q=80" alt="Illustrative skincare product image" class="w-full h-full object-cover">
+                                <span class="absolute -top-2 -right-2 w-5 h-5 rounded-full bg-stone-800 text-white text-[10px] grid place-items-center">1</span>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <p class="text-[10px] text-stone-400 uppercase tracking-widest mb-1">Beauty of Joseon</p>
+                                <h3 class="text-xs sm:text-sm font-semibold leading-5">Glow Deep Serum</h3>
+                                <p class="text-xs text-stone-400 mt-1">30 ml</p>
+                            </div>
+                            <strong class="text-xs sm:text-sm whitespace-nowrap">Rs. 2,450</strong>
+                        </div>
+                    </div>
+
+                    <!-- Coupon -->
+                    <div class="py-6 border-b border-stone-200">
+                        <label for="couponCode" class="block text-xs font-bold uppercase tracking-widest mb-3">Discount Code</label>
+                        <div class="flex gap-2">
+                            <input id="couponCode" type="text" placeholder="Enter code" class="checkout-input min-w-0 flex-1 uppercase">
+                            <button id="applyCoupon" type="button" class="px-4 bg-[#252424] text-white text-xs font-bold hover:bg-[#ec2795] transition">Apply</button>
+                        </div>
+                        <p id="couponMessage" class="text-xs mt-2 text-stone-500" aria-live="polite"></p>
+                    </div>
+
+                    <!-- Totals -->
+                    <div class="space-y-4 py-6 border-b border-stone-200 text-sm">
+                        <div class="flex justify-between gap-3">
+                            <span class="text-stone-500">Subtotal</span>
+                            <span id="checkoutSubtotal" class="font-medium">Rs. 5,100</span>
+                        </div>
+                        <div class="flex justify-between gap-3">
+                            <span class="text-stone-500">Delivery</span>
+                            <span class="text-xs text-stone-500 text-right">To be confirmed</span>
+                        </div>
+                        <div class="flex justify-between gap-3">
+                            <span class="text-stone-500">Discount</span>
+                            <span id="checkoutDiscount">Rs. 0</span>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between items-center py-6">
+                        <span class="font-sans font-semibold">Current Subtotal</span>
+                        <strong id="checkoutTotal" class="text-2xl">Rs. 5,100</strong>
+                    </div>
+                    <p class="text-xs text-stone-500 leading-6 mb-6">Final payable amount may include delivery charges. No payment will be collected on this demo page.</p>
+
+                    <label class="flex items-start gap-3 mb-6 cursor-pointer">
+                        <input type="checkbox" name="agree_terms" required class="w-4 h-4 mt-1 accent-[#ec2795] shrink-0">
+                        <span class="text-xs text-stone-600 leading-6">I agree to the <a href="#" class="underline hover:text-[#ec2795]">Terms & Conditions</a> and <a href="#" class="underline hover:text-[#ec2795]">Privacy Policy</a>.</span>
+                    </label>
+
+                    <a href="confirmation.html" type="submit" class="w-full bg-[#252424] text-white py-4 flex items-center justify-center gap-3 text-xs font-bold uppercase tracking-[.12em] hover:bg-[#ec2795] transition">
+                        Place Order <i data-lucide="arrow-right" class="w-4"></i>
+                    </a>
+
+                    <p id="checkoutNotice" class="text-xs text-stone-500 leading-6 mt-4" role="status" aria-live="polite"></p>
+
+                    <div class="flex items-center justify-center gap-2 mt-6 text-xs text-stone-400">
+                        <i data-lucide="lock-keyhole" class="w-4"></i>
+                        Checkout Preview
+                    </div>
+                </aside>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-[#252424] text-white">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 py-16">
+                <div>
+                    <div class="flex items-center gap-3 mb-5">
+                        <span class="w-11 h-11 rounded-full bg-[#ec2795] grid place-items-center text-xl font-bold">W</span>
+                        <div class="leading-tight"><strong class="text-sm">WORLD BEAUTY</strong><p class="text-[10px] tracking-[.3em] text-pink-300">POINT</p></div>
+                    </div>
+                    <p class="text-sm text-white/60 leading-7">Explore Korean skincare with World Beauty Point, based in Kathmandu, Nepal.</p>
+                    <a href="https://www.instagram.com/world_beauty_point/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="inline-block mt-5"><i data-lucide="instagram" class="w-5"></i></a>
+                </div>
+                <div>
+                    <h3 class="font-sans font-bold text-sm uppercase tracking-widest mb-5">Quick Links</h3>
+                    <div class="flex flex-col gap-3 text-sm text-white/60">
+                        <a href="#home" class="hover:text-white">Home</a>
+                        <a href="#categories" class="hover:text-white">Shop All</a>
+                        <a href="#about" class="hover:text-white">About Us</a>
+                        <a href="#contact" class="hover:text-white">Contact</a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-sans font-bold text-sm uppercase tracking-widest mb-5">Customer Care</h3>
+                    <div class="flex flex-col gap-3 text-sm text-white/60">
+                        <a href="mailto:worldbeautypoint@gmail.com?subject=Shopping%20Information" class="hover:text-white">Shopping Information</a>
+                        <a href="mailto:worldbeautypoint@gmail.com?subject=Returns%20and%20Refunds" class="hover:text-white">Returns & Refunds</a>
+                        <a href="mailto:worldbeautypoint@gmail.com?subject=Privacy%20Enquiry" class="hover:text-white">Privacy Enquiry</a>
+                        <a href="mailto:worldbeautypoint@gmail.com?subject=Terms%20and%20Conditions" class="hover:text-white">Terms & Conditions</a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-sans font-bold text-sm uppercase tracking-widest mb-5">Visit & Connect</h3>
+                    <div class="flex flex-col gap-3 text-sm text-white/60">
+                        <p>Kathmandu, Nepal</p>
+                        <a href="tel:+9779851403216" class="hover:text-white">+977 9851403216</a>
+                        <a href="mailto:worldbeautypoint@gmail.com" class="hover:text-white break-all">worldbeautypoint@gmail.com</a>
+                        <a href="https://worldbeautypoint.com/" target="_blank" rel="noopener noreferrer" class="hover:text-white">worldbeautypoint.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-white/15 py-6 flex flex-col sm:flex-row justify-between gap-3 text-xs text-white/50">
+                <p>© 2026 World Beauty Point. All rights reserved.</p>
+                <p>Frontend concept • Product prices and images are illustrative</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
